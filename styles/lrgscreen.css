@@ -33,6 +33,35 @@
     color: var(--black);
 }
 
+#hero {
+    display: flex;
+    justify-content: space-between;
+}
+.lower-hero {
+    width: 50%;
+}
+.lrgscreen-hero-right {
+    width: 50%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 1vh;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    padding-bottom: 2vh;
+    background-image: url("/images/libraryfront1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#quote blockquote {
+    
+    margin-left: 0px;
+    padding-left: 1vw;
+}
+#quote blockquote p {
+    text-align: right;
+    padding-right: 15%;
+}
 
 
 }

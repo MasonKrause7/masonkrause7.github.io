@@ -60,6 +60,7 @@ nav ul {
     padding-top: 1vh;
     padding-bottom: 1vh;
     margin-bottom: 0px;
+    
 }
 
 .lower-hero {
@@ -88,7 +89,7 @@ nav ul {
     border-radius: 5px;
     padding: .8em .8em;
     margin-left: 2vw;
-    margin-top: 3vh;
+    margin-top: 2vh;
     border: 1px solid var(--white);
 }
 
@@ -121,25 +122,22 @@ nav ul {
 
 #quote {
     border: 1px solid var(--red);
-    margin-top: 0px;
+    margin-top: 1.5vh;
     padding-top: 0px;
     background-color: var(--red);
     font-size: 1.4rem;
     font-style: italic;
 }
 
-#quote blockquote {
+#quote blockquote { 
+    position: relative;
     text-align: left;
     margin-bottom: 0px;
-    padding-bottom: 0px;
+    
 }
 
-#quote p {
-    margin-top: 0px;
-    padding-top: 0px;
+#quote blockquote p{
     text-align: right;
-    margin-right: 1vw;
-    padding-right: 2vw;
 }
 
 #black-bg {
