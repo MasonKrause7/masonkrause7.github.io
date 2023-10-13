@@ -54,13 +54,13 @@
     background-size: cover;
 }
 #quote blockquote {
-    
     margin-left: 0px;
     padding-left: 1vw;
+    text-align: center;
 }
 #quote blockquote p {
-    text-align: right;
-    padding-right: 15%;
+    text-align: center;
+    padding-left: 35%;
 }
 
 

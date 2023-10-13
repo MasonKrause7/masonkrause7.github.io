@@ -34,6 +34,7 @@ header .logo{
 }
 
 nav {
+    
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -122,7 +123,6 @@ nav ul {
 
 #quote {
     border: 1px solid var(--red);
-    margin-top: 1.5vh;
     padding-top: 0px;
     background-color: var(--red);
     font-size: 1.4rem;

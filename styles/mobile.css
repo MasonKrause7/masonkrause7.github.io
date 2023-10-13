@@ -64,4 +64,21 @@
     color: var(--white);
 }
 
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lrgscreen-hero-right {
+    margin-top: 1vh;
+    width: 97%;
+    height: 18vh;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    background-image: url("/images/libraryfront1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 }
