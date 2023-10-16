@@ -28,21 +28,21 @@
 #root-nav {
     position: relative;
 }
+#submenu {
+    display: none; 
+    position: absolute;
+    z-index: 100;
+    top: calc(100% + 45%);
+    background-color: var(--white);
+    border-radius: 5px;
+    margin: 0px;
+}
 #root-nav:hover #submenu {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#submenu {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    top: calc(100% + 65%);
 
-    background-color: var(--white);
-    border-radius: 5px;
-    margin: 0px;
-}
 #submenu li{
     border-bottom: 1px solid var(--black);
     border-radius: 5px;
@@ -64,21 +64,10 @@
     color: var(--white);
 }
 
-#hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.lrgscreen-hero-right {
-    margin-top: 1vh;
-    width: 97%;
-    height: 18vh;
-    border: 1px solid var(--white);
-    border-radius: 5px;
-    background-image: url("/images/libraryfront1.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
+
+
+
+
 
 }
