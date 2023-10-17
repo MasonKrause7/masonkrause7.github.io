@@ -1,4 +1,4 @@
-@media (min-width:320px) and (max-width: 950px){
+@media  (max-width: 950px){
 
 .lrgscreen-nav {
     display: none;
@@ -66,17 +66,9 @@
 }
 
 .hero-content h3 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-family: gothamBold;
 }
 
 
-}
-@media (max-width:319px) {
-    .hero-content h3 {
-        font-size: 1.8rem;
-    }
-    .hero-content p {
-        font-size: .7rem;
-    }
 }
