@@ -192,8 +192,10 @@ nav ul {
 
 
 footer {
-    padding-top: 1vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     background-color: var(--gray-d);
+    
 }
 
 #footer-links {
@@ -211,7 +213,9 @@ footer {
 
 #footer-socials {
     padding-left: 0px;
-    margin-top: .5vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 1vh 0vw;
     display: flex;
     justify-content: center;
     list-style: none;
