@@ -1,4 +1,4 @@
-@media (max-width: 950px){
+@media (min-width:320px) and (max-width: 950px){
 
 .lrgscreen-nav {
     display: none;
@@ -41,6 +41,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transform: translate(-25%, 0);
 }
 
 #submenu li{
@@ -63,14 +64,19 @@
     background-color: var(--black);
     color: var(--white);
 }
+
 .hero-content h3 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-family: gothamBold;
 }
 
 
-
-
-
-
+}
+@media (max-width:319px) {
+    .hero-content h3 {
+        font-size: 1.8rem;
+    }
+    .hero-content p {
+        font-size: .7rem;
+    }
 }

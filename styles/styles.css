@@ -57,7 +57,7 @@ body {
     height: 22vh;
 }
 nav {
-    font-family: gothamMedium;
+    font-family: gothamBook;
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -113,11 +113,7 @@ nav ul {
     transform: translate(-50%, -50%);
     z-index: 1;
 }
-.hero-content h3 {
-    font-family: gothamBold;
-    font-size: 2.2rem;
-    padding-top: 1vh;
-}
+
 .hero-content p{
     font-size:1.5rem;
     font-family: gothamBook;
@@ -140,7 +136,7 @@ nav ul {
 }
 
 .home-content-even {
-    height: 40vh;
+    height: 30vh;
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -150,7 +146,7 @@ nav ul {
     
 }
 .home-content-odd {
-    height: 40vh;
+    height: 50vh;
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -173,6 +169,17 @@ nav ul {
 #home-content-even0 {
     justify-content: center;
 }
+
+.home-content-text {
+    color: var(--white);
+    font-size: 130%;
+    font-family: gothamBook;
+    padding: 0px 1.5vw;
+}
+.home-content-text a {
+    color: var(--white);
+}
+
 
 
 
