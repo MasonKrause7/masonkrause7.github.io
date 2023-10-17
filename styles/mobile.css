@@ -63,7 +63,10 @@
     background-color: var(--black);
     color: var(--white);
 }
-
+.hero-content h3 {
+    font-size: 2rem;
+    font-family: gothamBold;
+}
 
 
 

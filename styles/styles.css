@@ -6,6 +6,34 @@
     --black: rgb(0, 0, 0);
     --t-time: .5s;
 }
+@font-face {
+    font-family: gothamBlack;
+    src: url("/styles/fonts/Gotham-Black.otf");
+}
+@font-face {
+    font-family: gothamBold;
+    src: url("/styles/fonts/Gotham-Bold.otf");
+}
+@font-face{
+    font-family: gothamLight;
+    src: url("/styles/fonts/Gotham-Light.otf");
+}
+@font-face {
+    font-family: gothamThinItalic;
+    src: url("/styles/fonts/Gotham-ThinItalic.otf");
+}
+@font-face {
+    font-family: gothamBook;
+    src: url("/styles/fonts/GothamBook.ttf");
+}
+@font-face {
+    font-family: gothamBookItalic;
+    src: url("/styles/fonts/Gotham-BookItalic.otf");
+}
+@font-face {
+    font-family: gothamMedium;
+    src: url("/styles/fonts/GothamMedium.ttf");
+}
 
 * {
     box-sizing: border-box;
@@ -13,8 +41,8 @@
 }
 body {
     margin: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 0px;
+    min-width: 327px;
 }
 
 .logo{
@@ -29,17 +57,21 @@ body {
     height: 22vh;
 }
 nav {
+    font-family: gothamMedium;
     width: 100%;
     margin: 0px;
     padding: 0px;
     padding-top: 1vh;
     padding-bottom: 1vh;
-    background-color: var(--gray-d);
+    background-color: var(--black);
     top:0px;
     left:0px;
     position: sticky;
+    z-index: 5;
+    border-bottom: 1px solid var(--gray-d);
 }
 nav ul {
+    
     padding-left: 0px;
     margin: 0px;
     display: flex;
@@ -49,7 +81,7 @@ nav ul {
 }
 
 .hero{
-    height: 60vh;
+    height: 65vh;
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -74,32 +106,32 @@ nav ul {
 .hero-content {
     color: var(--white);
     text-align: center;
-    padding-right: 2vw;
-    padding-top: 3vh;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
-.hero-content h3{
-    font-size:2.5rem;
+.hero-content h3 {
+    font-family: gothamBold;
+    font-size: 2.2rem;
+    padding-top: 1vh;
 }
 .hero-content p{
     font-size:1.5rem;
-    padding-top: 12%;
+    font-family: gothamBook;
+    padding: 7vh 1vw 0vh 1vw;
 }
-#hero-btn1 {
-    top: 80vh;
-    left: 30vw;
-}
-#hero-btn2{
-    top: 80vh;
-    left: 50vw;
-}
+
 .hero-btn {
     font-size: 1.2rem;
     color: var(--white);
     background-color: transparent;
     border: 1px solid var(--white);
     border-radius: 5px;
-    position: absolute;
     padding: 1.5vh 2.5vw;
+    margin: .5vh .5vw;
 }
 .hero-btn:hover {
     background-color: var(--white);
@@ -113,6 +145,9 @@ nav ul {
     padding: 0px;
     margin: 0px;
     background-color: var(--red);
+    display: flex;
+    align-items: center;
+    
 }
 .home-content-odd {
     height: 40vh;
@@ -120,6 +155,23 @@ nav ul {
     padding: 0px;
     margin: 0px;
     background-color: var(--black);
+    display: flex;
+    align-items: center;
+}
+#quote p{
+    margin: 0px;
+}
+#quote {
+    color: var(--white);
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: gothamThinItalic;
+}
+#quote :nth-child(2){
+    padding-top:3vh;
+}
+#home-content-even0 {
+    justify-content: center;
 }
 
 
