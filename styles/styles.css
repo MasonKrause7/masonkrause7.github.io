@@ -93,19 +93,26 @@ nav ul {
     background-repeat: no-repeat;
 }
 .hero-fg {
+    display: flex;
+    justify-content: center;
     margin: 0px;
     width: 100%;
     min-height: 60vh;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .9));
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, 1));
 }
 .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     color: var(--white);
     text-align: center;
-    
+    width: 90%;
+    align-items: center;
+    padding: 3vh 0px;
 }
 .hero-content h3 {
     margin: 0px;
-    padding: 7% 2vw 0vh 2vw;
+    padding: 0px;
     font-size: 2.3rem;
     font-family: gothamBold;
     font-weight: bold;
@@ -113,8 +120,8 @@ nav ul {
 .hero-content p{
     font-size:1.5rem;
     font-family: gothamBook;
-    padding: 50px 1vw 0px 1vw;
-    margin-top: 15%;
+    padding: 3vh;
+    margin-top: 0px;
     
 }
 .hero-btns {
@@ -209,11 +216,13 @@ nav ul {
 .page-content {
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     /* flex-direction is specified in media queries (column for mobile) */
     margin-bottom: 2vh;
     padding: 1vh 2vw;
     position: relative;
 }
+
 
 .board h2{
     font-family: gothamBold;
@@ -278,7 +287,12 @@ a {
     transform: translate(-100%, 0);
     font-size: 1.1em;
 }
-
+.amendment-notes {
+    max-width: 60%;
+    font-family: gothamBook;
+    padding: 0px 0vw 0px 3vw;
+    font-size: 1.2em;
+}
 
 
 

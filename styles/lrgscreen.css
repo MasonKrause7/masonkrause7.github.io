@@ -1,4 +1,4 @@
-@media (min-width: 951px){
+@media (min-width: 950px){
 
 .mobile-nav{
     display: none;
@@ -31,7 +31,7 @@
 }
 
 .hero-content h3 {
-    font-size: 2.7rem;
+    font-size: 3rem;
 }
 
 
