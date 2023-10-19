@@ -82,6 +82,7 @@ nav ul {
     align-items: center;
 }
 
+
 .hero{
     min-height: 40vh;
     width: 100%;
@@ -309,7 +310,7 @@ a {
     max-width: 60%;
     font-family: gothamBook;
     padding: 0px 0vw 0px 3vw;
-    font-size: 10rex;
+    font-size: 17px;
 }
 
 
