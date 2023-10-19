@@ -215,13 +215,14 @@ nav ul {
 
 .page-content {
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     /* flex-direction is specified in media queries (column for mobile) */
     margin-bottom: 2vh;
     padding: 1vh 2vw;
     position: relative;
 }
+
 
 
 .board h2{
@@ -259,6 +260,7 @@ a {
 .articles-of-bylaws ul li{
     margin-bottom: 4px;
     font-size: 1.1em;
+    max-width: 65%;
 }
 
 .article {
@@ -281,11 +283,13 @@ a {
     font-family: gothamBook;
     position: absolute;
     min-width: 35vw;
-    border: 1px solid var(--gray-d);
+    border-left: 2px solid var(--gray-d);
+    border-bottom:2px solid var(--gray-l);
     top: 0px;
     left: 100%;
     transform: translate(-100%, 0);
     font-size: 1.1em;
+    opacity: .7;
 }
 .amendment-notes {
     max-width: 60%;
