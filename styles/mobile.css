@@ -1,4 +1,4 @@
-@media  (max-width: 950px) and (orientation: portrait){
+@media  (max-width: 950px) {
 
 .lrgscreen-nav {
     display: none;
@@ -76,80 +76,4 @@
 
 
 }
-@media (max-width: 950px) and (orientation: landscape){
-    
-    .lrgscreen-nav {
-        display: none;
-    }
-    
-    .mobile-nav ul .navlink {
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-    }
-    .mobile-nav ul .navlink a {
-        padding: 1.5vh 2.5vw;
-        transition: var(--t-time);
-        font-size: 1.3rem;
-        text-decoration: none;
-        color: var(--white);
-    }
-    .mobile-nav ul .navlink:hover {
-        cursor: pointer;
-    }
-    .mobile-nav ul .navlink:hover a{
-        background-color: var(--white);
-        border-radius: 5px;
-        color: var(--black);
-        background-color: var(--white);
-    }
-    
-    #root-nav {
-        position: relative;
-    }
-    #submenu {
-        display: none; 
-        position: absolute;
-        z-index: 100;
-        top: calc(100% + 45%);
-        background-color: var(--white);
-        border-radius: 5px;
-        margin: 0px;
-    }
-    #root-nav:hover #submenu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transform: translate(-25%, 0);
-    }
-    
-    #submenu li{
-        border-bottom: 1px solid var(--black);
-        border-radius: 5px;
-        padding: 1.5vh 2vw;
-        margin: 0px;
-        width: 100%;
-        text-align: left;
-        transition: var(--t-time);
-    }
-    #submenu li a {
-        padding: 1vh 2vw;
-        transition: var(--t-time);
-    }
-    #submenu li:hover {
-        background-color: var(--black);
-    }
-    #submenu li:hover a{
-        background-color: var(--black);
-        color: var(--white);
-    }
-    
-    
-    
-    
-    .about-page-content {
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
 
-
-}

@@ -52,9 +52,9 @@ body {
     align-items: center;
 }
 .logo img{
-    min-width: 275px;
+    min-width: 200px;
     max-width: 55vw;
-    max-height: 200px;
+    max-height: 130px;
 }
 nav {
     font-family: gothamLight;
@@ -71,7 +71,6 @@ nav {
     border-bottom: 1px solid var(--gray-d);
 }
 nav ul {
-    
     padding-left: 0px;
     margin: 0px;
     display: flex;
@@ -81,7 +80,7 @@ nav ul {
 }
 
 .hero{
-    min-height: 65vh;
+    min-height: 60vh;
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -93,7 +92,7 @@ nav ul {
 .hero-fg {
     margin: 0px;
     width: 100%;
-    height: 100%;
+    min-height: 60vh;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .9));
 }
 .hero-content {
@@ -103,8 +102,8 @@ nav ul {
 }
 .hero-content h3 {
     margin: 0px;
-    padding: 2vh;
-    font-size: 2rem;
+    padding: 5vh 2vw 0vh 2vw;
+    font-size: 2.3rem;
     font-family: gothamBold;
     font-weight: bold;
 }
@@ -189,11 +188,12 @@ nav ul {
 .page-title {
     font-family: gothamBold;
     padding: 3vh 1vw;
-    margin-bottom: 0px;
+    margin: 0px;
+    margin-top: 2vh;
     text-align: center;
-    color: white;
+    color: var(--white);
     width: 100%;
-    background-color: black;
+    background-color: var(--black);
 }
 .page-explanation {
     font-family: gothamLight;
@@ -205,17 +205,34 @@ nav ul {
 
 .about-page-content {
     display:flex;
+    flex-wrap: wrap;
+    /* flex-direction is specified in media queries (column for mobile) */
+    margin-bottom: 2vh;
+    padding: 1vh 2vw;
 }
 
 .board h2{
-    padding-left: 2vw;
     font-family: gothamBold;
 }
 .board-of-directors {
     list-style: none;
     margin-top: 0px;
-    padding-top: .5vh;
     font-family: gothamBook;
+}
+.director {
+    border-bottom: 1px dotted black;
+    font-size: 1.2rem;
+}
+.about-additional-info h3 {
+    font-family: gothamBold;
+}
+.about-additional-info a {
+    font-family: gothamBook;
+    color: var(--red);
+    font-size: 1.2em;
+}
+#newsletters {
+    list-style: none;
 }
 
 

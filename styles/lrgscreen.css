@@ -29,16 +29,8 @@
 .lrgscreen-nav ul li:hover a{
     color: var(--black);
 }
-.hero-content {
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.hero-content h3 {
-    font-size: 3rem;
-    font-family: gothamBold;
-    padding-bottom: 4vh;
-}
+
+
 
 
 .about-page-content {
