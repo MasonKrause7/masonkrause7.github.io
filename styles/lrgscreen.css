@@ -30,7 +30,9 @@
     color: var(--black);
 }
 
-
+.hero-content h3 {
+    font-size: 2.7rem;
+}
 
 
 .about-page-content {

@@ -39,6 +39,9 @@
     box-sizing: border-box;
       
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0px;
     padding: 0px;
@@ -80,7 +83,7 @@ nav ul {
 }
 
 .hero{
-    min-height: 60vh;
+    min-height: 40vh;
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -102,7 +105,7 @@ nav ul {
 }
 .hero-content h3 {
     margin: 0px;
-    padding: 5vh 2vw 0vh 2vw;
+    padding: 7% 2vw 0vh 2vw;
     font-size: 2.3rem;
     font-family: gothamBold;
     font-weight: bold;
@@ -110,7 +113,8 @@ nav ul {
 .hero-content p{
     font-size:1.5rem;
     font-family: gothamBook;
-    padding: 7vh 1vw 0vh 1vw;
+    padding: 50px 1vw 0px 1vw;
+    margin-top: 15%;
     
 }
 .hero-btns {
@@ -186,10 +190,11 @@ nav ul {
 
 
 .page-title {
+    
     font-family: gothamBold;
     padding: 3vh 1vw;
     margin: 0px;
-    margin-top: 2vh;
+    border-top: 4px solid var(--red);
     text-align: center;
     color: var(--white);
     width: 100%;
@@ -198,17 +203,16 @@ nav ul {
 .page-explanation {
     font-family: gothamLight;
     text-align: center;
-    padding-top: 1px;
-    margin-top: 1px;
-    margin-bottom: 1vh;
+    padding: 1vh 1vw;
 }
 
-.about-page-content {
+.page-content {
     display:flex;
     flex-wrap: wrap;
     /* flex-direction is specified in media queries (column for mobile) */
     margin-bottom: 2vh;
     padding: 1vh 2vw;
+    position: relative;
 }
 
 .board h2{
@@ -223,17 +227,58 @@ nav ul {
     border-bottom: 1px dotted black;
     font-size: 1.2rem;
 }
-.about-additional-info h3 {
+
+h1, h2, h3 {
     font-family: gothamBold;
+}
+a {
+    color: var(--red);
+    font-family: gothamBook;
 }
 .about-additional-info a {
     font-family: gothamBook;
-    color: var(--red);
     font-size: 1.2em;
 }
 #newsletters {
     list-style: none;
 }
+
+.articles-of-bylaws ul {
+    list-style: none;
+    font-family: gothamBook;
+}
+.articles-of-bylaws ul li{
+    margin-bottom: 4px;
+    font-size: 1.1em;
+}
+
+.article {
+    padding: 2px 2vw; 
+    font-family: gothamLight;
+    font-size: 1.1em;
+}
+.article ol {
+    padding: 2px 6vw;
+}
+.article ol li {
+    padding: 7px 0px;
+}
+.article h3 {
+    text-decoration: underline;
+}
+.inset{
+    text-align: center;
+    background-color: lightyellow;
+    font-family: gothamBook;
+    position: absolute;
+    min-width: 35vw;
+    border: 1px solid var(--gray-d);
+    top: 0px;
+    left: 100%;
+    transform: translate(-100%, 0);
+    font-size: 1.1em;
+}
+
 
 
 
