@@ -186,6 +186,8 @@ nav ul {
     justify-content: center;
 }
 
+
+
 .home-content-text {
     color: var(--white);
     font-size: 130%;
@@ -240,6 +242,14 @@ nav ul {
 }
 
 
+table {
+    border: 1px solid black;
+}
+
+th, td {
+    padding:15px;
+    border: 1px solid black;
+}
 
 
 .board h2{
