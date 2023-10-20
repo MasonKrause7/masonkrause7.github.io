@@ -84,6 +84,7 @@ nav ul {
 
 
 .hero{
+    border-top: 3px solid var(--red);
     min-height: 40vh;
     width: 100%;
     padding: 0px;
