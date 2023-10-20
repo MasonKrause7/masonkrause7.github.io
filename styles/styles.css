@@ -100,7 +100,7 @@ nav ul {
     margin: 0px;
     width: 100%;
     min-height: 60vh;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .9));
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .8));
 }
 .hero-content {
     display: flex;
@@ -140,7 +140,7 @@ nav ul {
     padding: 1.5vh 2.5vw;
     margin: .5vh .5vw;
     text-decoration: none;
-    transition: .5s;
+    transition: var(--t-time);
 }
 
 .hero-btn:hover {
@@ -371,4 +371,5 @@ footer aside {
     color: var(--white);
     padding-bottom: 1vh;
     font-size: 1.2rem;
+    font-family: gothamLight;
 }

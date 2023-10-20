@@ -33,7 +33,7 @@
     display: none; 
     position: absolute;
     z-index: 100;
-    top: calc(100% + 45%);
+    top: 110%;
     background-color: var(--white);
     border-radius: 5px;
     margin: 0px;
@@ -42,7 +42,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transform: translate(-25%, 0);
+    transform: translate(-31%, 0%);
 }
 
 #submenu li{
