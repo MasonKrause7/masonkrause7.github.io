@@ -55,9 +55,8 @@ body {
     align-items: center;
 }
 .logo img{
-    min-width: 200px;
-    max-width: 55vw;
-    max-height: 130px;
+    width: 360px;
+    height: 150px;
 }
 nav {
     font-family: gothamLight;
@@ -236,19 +235,32 @@ nav ul {
     padding: 1vh 2vw;
     position: relative;
 }
-.page-content > p {
-    font-family: gothamBook;
-    font-size: 1.2em;
-}
 
+#membership-container {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 1vh 2vw;
+}
 
 table {
     border: 1px solid black;
 }
-
 th, td {
     padding:15px;
     border: 1px solid black;
+    font-family: gothamLight;
+}
+#how-to-join p {
+    font-family: gothamBook;
+    font-size: 1.2em;
+}
+#how-to-join ul {
+    list-style:circle;
+}
+#how-to-join li {
+    color: var(--red);
+    font-family: gothamBook;
+    margin-bottom: 5px;
 }
 
 

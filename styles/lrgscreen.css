@@ -12,7 +12,7 @@
     padding-left: 0px;
 }
 .lrgscreen-nav ul li {
-    padding: 2vh 2vw;
+    padding: 1em 1em;
     border-radius: 5px;
     transition: var(--t-time);
 }
@@ -38,6 +38,7 @@
 .about-page-content {
     justify-content: space-evenly;
 }
+
 
 
 
