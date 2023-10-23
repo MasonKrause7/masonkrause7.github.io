@@ -349,6 +349,11 @@ th, td {
 .event-object {
     display: none;
 }
+#event-title {
+    text-align: center;
+    padding: 0vh 5vw;
+    margin: 1vh 4vw;
+}
 
 
 /* Footer Styling */
