@@ -35,6 +35,7 @@
     src: url("/styles/fonts/GothamMedium.ttf");
 }
 
+/* Generic Styling */
 * {
     box-sizing: border-box;
       
@@ -47,8 +48,6 @@ body {
     padding: 0px;
     min-width: 327px;
 }
-
-
 .logo{
     display: flex;
     justify-content: center;
@@ -80,8 +79,32 @@ nav ul {
     justify-content: space-evenly;
     align-items: center;
 }
+.page-title {
+    
+    font-family: gothamBold;
+    padding: 3vh 1vw;
+    margin: 0px;
+    border-top: 4px solid var(--red);
+    text-align: center;
+    color: var(--white);
+    width: 100%;
+    background-color: var(--black);
+}
+.page-explanation {
+    font-family: gothamLight;
+    text-align: center;
+    padding: 1vh 1vw;
+}
+h1, h2, h3 {
+    font-family: gothamBold;
+}
+a {
+    color: var(--red);
+    font-family: gothamBook;
+}
+/* END GENERIC*/
 
-
+/* Homepage Styling */
 .hero{
     border-top: 3px solid var(--red);
     min-height: 40vh;
@@ -141,15 +164,11 @@ nav ul {
     text-decoration: none;
     transition: var(--t-time);
 }
-
 .hero-btn:hover {
     background-color: var(--white);
     color: var(--black);
     cursor: pointer;
 }
-
-
-
 .home-content-even {
     width: 100%;
     min-height: 175px;
@@ -158,7 +177,6 @@ nav ul {
     background-color: var(--red);
     display: flex;
     align-items: center;
-    
 }
 .home-content-odd {
     width: 100%;
@@ -184,9 +202,6 @@ nav ul {
 #home-content-even0 {
     justify-content: center;
 }
-
-
-
 .home-content-text {
     color: var(--white);
     font-size: 130%;
@@ -196,26 +211,9 @@ nav ul {
 .home-content-text a {
     color: var(--white);
 }
+/* END HOMEPAGE */
 
-
-
-.page-title {
-    
-    font-family: gothamBold;
-    padding: 3vh 1vw;
-    margin: 0px;
-    border-top: 4px solid var(--red);
-    text-align: center;
-    color: var(--white);
-    width: 100%;
-    background-color: var(--black);
-}
-.page-explanation {
-    font-family: gothamLight;
-    text-align: center;
-    padding: 1vh 1vw;
-}
-
+/* About Us Styling */
 .about-page-content {
     display: flex;
     flex-wrap: wrap;
@@ -235,13 +233,14 @@ nav ul {
     padding: 1vh 2vw;
     position: relative;
 }
+/* END ABOUT US*/
 
+/* Membership Styling */
 #membership-container {
     display:flex;
     flex-wrap: wrap;
     padding: 1vh 2vw;
 }
-
 table {
     border: 1px solid black;
 }
@@ -262,8 +261,9 @@ th, td {
     font-family: gothamBook;
     margin-bottom: 5px;
 }
+/* END MEMBERSHIP*/
 
-
+/* Board of Directors */
 .board h2{
     font-family: gothamBold;
 }
@@ -278,19 +278,11 @@ th, td {
     font-size: 1.2rem;
     margin: 3px 0px 2px 0px;
 }
-
-h1, h2, h3 {
-    font-family: gothamBold;
-}
-a {
-    color: var(--red);
-    font-family: gothamBook;
-}
-
+/* END BOARD */
 #newsletters {
     list-style: none;
 }
-
+/* Bylaws and Constitution Styling*/
 .articles-of-bylaws ul {
     list-style: none;
     font-family: gothamBook;
@@ -300,7 +292,6 @@ a {
     font-size: 2.4ex;
     max-width: 65%;
 }
-
 .article {
     padding: 2px 2vw; 
     font-family: gothamLight;
@@ -335,10 +326,32 @@ a {
     padding: 0px 0vw 0px 3vw;
     font-size: 17px;
 }
+/* END Bylaws/Constitution */
+
+/* Events Styling*/
+#events{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.events-type {
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid black;
+}
+.events-type ul li {
+    margin: 5px 0px;
+    padding: 5px 5px;
+}
+
+.event-object {
+    display: none;
+}
 
 
-
-
+/* Footer Styling */
 footer {
     padding-top: 3vh;
     padding-bottom: 3vh;

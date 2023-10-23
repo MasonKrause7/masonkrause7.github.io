@@ -74,14 +74,16 @@
     padding-left: 0vw;
     margin-left: 4vw;
 }
-
-
-
-
-
 .about-page-content {
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+#events {
+    flex-direction:column;
+}
+#events .events-type {
+    margin-left: 3vw;
 }
 
 
