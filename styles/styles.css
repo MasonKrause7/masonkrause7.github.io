@@ -349,11 +349,28 @@ th, td {
 .event-object {
     display: none;
 }
+#event-display {
+    margin-left: 1vw;
+}
+#event-display p, ul {
+    margin-left: 2vw;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+#event-display li {
+    margin: 0px;
+    padding: 0px;
+}
+#event-display li a {
+    margin: 0px;
+    padding: 0px;
+}
 #event-title {
     text-align: center;
     padding: 0vh 5vw;
     margin: 1vh 4vw;
 }
+
 
 
 /* Footer Styling */
