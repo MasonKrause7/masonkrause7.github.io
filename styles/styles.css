@@ -350,25 +350,39 @@ th, td {
     display: none;
 }
 #event-display {
-    margin-left: 1vw;
+    margin: 2vh 2vw;
+}
+#event-display h4 {
+    margin-bottom: 8px;
 }
 #event-display p, ul {
     margin-left: 2vw;
     margin-top: 0px;
     margin-bottom: 2px;
 }
-#event-display li {
-    margin: 0px;
+#event-display ul li {
     padding: 0px;
 }
-#event-display li a {
-    margin: 0px;
-    padding: 0px;
+
+.event-property{
+    display: none;
+    font-family: gothamBook;
+    font-size: 1.2em;
 }
 #event-title {
     text-align: center;
     padding: 0vh 5vw;
     margin: 1vh 4vw;
+}
+#event-details p {
+    margin-bottom: 12px;
+}
+
+#event-images img {
+    margin: 8px 0px;
+    padding: 0px;
+    max-width: 40vw;
+    max-height: 20vh;
 }
 
 

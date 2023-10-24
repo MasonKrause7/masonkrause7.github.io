@@ -8,11 +8,11 @@ var event1 = {
   location: "Morgan University Center",
   details: {
     Thanks: `Great thanks to those who joined us for the inaugural social event of The Woodward Library Society, Dinner on the River: An Evening with Michael Shoulders.`,
-    Description: `The dinner is open to everyone, regardless of whether or not you are a member of the Society. 
-        Mr. Shoulders is a Clarksville resident, a much sought after speaker, and a nationally known author of children's books, including V is for Volunteer and Count on Us: A Tennessee Number Book.
-        Five of Mr. Shoulders' books signed by the author will be given away as door prizes.
-        For more information, please contact the Library Director's office at 931-221-7618 or email weberj.
-        Pictures from this event can be found in the Gallery. You can also read the The Leaf Chronicle Article about this event.`,
+    Description: `The dinner is open to everyone, regardless of whether or not you are a member of the Society.`,
+    SpeakerDescription: `Mr. Shoulders is a Clarksville resident, a much sought after speaker, and a nationally known author of children's books, including V is for Volunteer and Count on Us: A Tennessee Number Book.
+        Five of Mr. Shoulders' books signed by the author will be given away as door prizes.`,
+    MoreInfo: `For more information, please contact the Library Director's office at 931-221-7618.
+        Pictures from this event can be found in the <a href="gallery.html">Gallery</a>. You can also read <a href="https://www.theleafchronicle.com/article/20090501/COMMUNITY/905010315/1086/Woodward+Library+Society+benefits+APSU+campus+library">The Leaf Chronicle Article</a> about this event.`,
   },
   images: {
     //image-url : image-caption
@@ -44,4 +44,8 @@ var event3 = {
     RSVP: `Please RSVP by March 18, 2010 to 931-221-7222.`,
     Note: `This event is for members only. Please see the memberships page for a description of members benefits.`,
   },
+  images: {
+    "images/apsu-multicolor-logo.jpg": "The apsu multi color logo",
+  },
 };
+
