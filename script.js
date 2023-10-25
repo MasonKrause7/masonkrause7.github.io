@@ -8,19 +8,24 @@ function getIdArg() {
   else return null;
 }
 
-//finds the event object with the id provided from getIdArg as eventN, N being the id number
-//uses the corresponding eventObj from events.js to render
+//takes the id passed as query param
+//uses the corresponding event object from events.js to render
 //the event information on the event.html page
 function renderEventInfo() {
   const id = getIdArg();
   const eventObj = window[id];
   let eventTitle = document.getElementById("event-title");
   if (eventObj.title) {
-    eventTitle.innerText = `${eventObj.title}`;
+    eventTitle.insertAdjacentHTML("beforeend",`${eventObj.title}`);
   } else {
     eventTitle.innerText = "Untitled Event";
   }
   eventTitle.style.display = "block";
+  
+  if(eventObj.subtitle) {
+    const eventSubTitle = document.getElementById("event-subtitle");
+    eventSubTitle.insertAdjacentHTML("beforeend", eventObj.subtitle);
+  }
 
   if (eventObj.date) {
     let eventDate = document.getElementById("event-date");
@@ -77,24 +82,30 @@ function renderEventInfo() {
   }
 }
 
-//finds the most recent event (event with highest id value) whose
+//finds the most recent event (the highest id event) and starts
+//pulling events backward by one until the 
 //id value should match the global variable currentEventNumber;
 //renders that event on the current event list of the events.html page
 function renderCurrentEvent() {
-  const currEvent = window[`event${currentEventNumber}`];
-  const currEventList = document.getElementById("current-event-list");
-  currEventList.insertAdjacentHTML(
-    "beforeend",
-    `
-        <li><a href="event.html?id=event${currentEventNumber}">${currEvent.title}</a></li>
-    `
-  );
+    let currEventIndex = totalNumberOfEvents;
+    for(let i = 0; i < numberOfEventsThatAreCurrent; i++){
+        const currEvent = window[`event${currEventIndex}`];
+        const currEventList = document.getElementById("current-event-list");
+        currEventList.insertAdjacentHTML(
+            "beforeend",
+            `
+            <li><a href="event.html?id=event${currEventIndex}">${currEvent.title}</a></li>
+            `
+        );
+        currEventIndex--;
+    }
+  
 }
 
-//finds past events (all events whose id is not the currentEventNumber)
+//finds past events (difference between totalNumberOfEvents and eventsThatAreCurrent)
 //renders each event as a link to its corresponding event.html?id=eventN page.
 function renderPastEvents() {
-  for (let i = 1; i < currentEventNumber; i++) {
+  for (let i = 1; i <= (totalNumberOfEvents-numberOfEventsThatAreCurrent); i++) {
     let obj = window[`event${i}`];
     const pastEventList = document.getElementById("past-event-list");
     pastEventList.insertAdjacentHTML(

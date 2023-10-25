@@ -374,6 +374,12 @@ th, td {
     padding: 0vh 5vw;
     margin: 1vh 4vw;
 }
+#event-subtitle {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-family: gothamLight;
+}
 #event-details p {
     margin-bottom: 12px;
 }

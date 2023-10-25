@@ -1,4 +1,6 @@
-var currentEventNumber = 3;
+var totalNumberOfEvents = 4;
+var numberOfEventsThatAreCurrent = 2;
+
 var event1 = {
   title: "Dinner on the River: An Evening with Michael Shoulders",
   date: "April 17, 2009",
@@ -44,8 +46,15 @@ var event3 = {
     RSVP: `Please RSVP by March 18, 2010 to 931-221-7222.`,
     Note: `This event is for members only. Please see the memberships page for a description of members benefits.`,
   },
-  images: {
-    "images/apsu-multicolor-logo.jpg": "The apsu multi color logo",
-  },
+  images: {},
+};
+var event4 = {
+    title: '<i>The Society Social</i>, An Evening with Wade Bourne',
+    subtitle: "Clarksville's own free-lance outdoor writer and broadcaster",
+    date: 'Thursday, April 22, 2010',
+    times: {
+        "5:30 - 7:00 PM" : " - Moveable Feast",
+        "7:00 PM" : " - Program"
+    }
 };
 
