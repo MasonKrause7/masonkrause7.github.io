@@ -58,3 +58,27 @@ var event4 = {
     }
 };
 
+
+
+var totalNumberOfGalleries = 2; 
+
+var gallery1 = {
+  title: 'Woodward Library Society Fall 2012 Program: "The Politics of Memory: Archives, Historic Preservation, and Lessons of the Past,"',
+  subtitle: 'by Dr. Susan Curtis, Purdue University, October 18, 2012',
+  images: {
+    //<img url> : <img alt attribute>
+    "/images/hashtagGovs.jpeg": "Random img",
+    "/images/libraryfront1.jpg": ""
+  }
+}
+var gallery2 = {
+  title: 'Woodward Library Society 2013 Spring Social: Enter Laughing (But Quietly Please!): Amusing Anecdotes from a Life in Libraries',
+  subtitle: 'Featuring Dr. Joe Trahern, Professor Emeritus of English, University of Tennessee April 16, 2013',
+  images: {
+    "/images/woodwardlibrary-sideshot.jpeg": "Side shot of Woodward Library Society",
+    "/images/apsu-multicolor-logo.jpg": "Multicolor logo",
+    "/images/library-front-sculpture.jpg": "Library front sculpture"
+  }
+};
+
+

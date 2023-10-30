@@ -132,7 +132,54 @@ window.onload = () => {
     renderEventInfo();
   } else if (window.location.href.includes("events.html")) {
     renderEventLists();
+  } else if(window.location.href.includes("gallery.html?")){
+    //render gallery with id from query param
+    renderSpecificGallery();
+    renderGalleryList();
+  } else if(window.location.href.includes("gallery.html")){
+    renderMostRecentGallery();
   }
 };
-
 /* END OF DYNAMIC EVENT RENDERING */
+/* BEGIN DYNAMIC GALLERY RENDERING */
+
+function renderMostRecentGallery(){
+  window.location.href=`gallery.html?id=gallery${totalNumberOfGalleries}`;
+}
+function renderGalleryList(){
+  const galId = getIdArg();
+  let id = galId.substring(galId.indexOf("y")+1);
+  const otherGalList = document.getElementById("gallery-list");
+  for(i = 1; i <= totalNumberOfGalleries; i++){
+    if(i != id){
+      otherGalList.insertAdjacentHTML(
+        "beforeend",
+        `<li><a href="gallery.html?id=gallery${i}">${window[`gallery${i}`].title}</a></li>`
+        );
+    }
+  }
+}
+function renderSpecificGallery(){
+  const id = getIdArg();
+  let galObj = window[id];
+  console.log(galObj);
+  const title = document.getElementById("displayed-gallery-title");
+  title.insertAdjacentHTML(
+    "beforeend",
+    `${galObj.title}`
+  );
+  const subtitle = document.getElementById("displayed-gallery-subtitle");
+  subtitle.insertAdjacentHTML(
+    "beforeend",
+    `${galObj.subtitle}`
+  );
+  const imageList = document.getElementById("displayed-gallery-images");
+  for(i = 0; i < Object.keys(galObj.images).length; i++){
+    imageList.insertAdjacentHTML(
+      "beforeend",
+      `<li><img src="${Object.keys(galObj.images)[i]}" alt="${galObj.images[Object.keys(galObj.images)[i]]}"></li>`
+    );
+  }
+}
+
+/* END OF DYNAMIC GALLERY RENDERING */
