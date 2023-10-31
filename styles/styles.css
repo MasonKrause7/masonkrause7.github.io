@@ -327,77 +327,83 @@ th, td {
 /* END Bylaws/Constitution */
 
 /* Events Styling*/
-#events{
+#event-container {
+    display: flex;
+    margin: 10px 0px;
+}
+#events-list {
     margin: 0px;
+    margin-left: 2vw;
     padding: 0px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    width: 15vw;
+}
+#event-display{
+    margin: 0px;
+    margin-right: 2vw;
+    padding: 5px 2vw;
+    width: 75vw;
+    border-right: 1px dotted var(--gray-d);
+}
+#event-display h2, h3 {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+#event-display p {
+    font-family: gothamBook;
+    margin: 0px;
+    padding: 0px;
+}
+#events-list ul {
+    padding: 2px;
+}
+#events-list ul li {
+    font-family: gothamLight;
+    margin-top: 7px;
+}
+#event-attributes {
+    padding-left: 3vw;
 }
 .events-type {
     margin: 0px;
     padding: 0px;
-    border-bottom: 1px solid black;
 }
-.events-type ul li {
-    margin: 5px 0px;
-    padding: 5px 5px;
+@media(max-width: 600px) {
+    #event-container {
+        flex-direction: column;
+        margin: 0px 1vw;
+    }
+
+    #events-list {
+        border-top: 1px dotted var(--black);
+        width: 65vw;
+        margin: 0px;
+        margin-top: 10px;
+        padding: 0px;
+        align-self: center;
+    }
+    #event-display {
+        width: 100vw;
+        border: none;
+    }
 }
 
-.event-object {
-    display: none;
-}
-#event-display {
-    margin: 2vh 2vw;
-}
-#event-display h4 {
-    margin-bottom: 8px;
-}
-#event-display p, ul {
-    margin-left: 2vw;
-    margin-top: 0px;
-    margin-bottom: 2px;
-}
-#event-display ul li {
-    padding: 0px;
-}
 
-.event-property{
-    display: none;
-    font-family: gothamBook;
-    font-size: 1.2em;
-}
-#event-title {
-    text-align: center;
-    padding: 0vh 5vw;
-    margin: 1vh 4vw;
-}
-#event-subtitle {
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-    font-family: gothamLight;
-}
-#event-details p {
-    margin-bottom: 12px;
-}
 
-#event-images img {
-    margin: 8px 0px;
-    padding: 0px;
-    max-width: 40vw;
-    max-height: 20vh;
-}
+
+
+
 
 #gallery-container {
     display: flex;
-    justify-content: space-between;
-    margin: 5px 2vw;
+    margin: 10px 0px;
 }
 #displayed-gallery {
     flex-grow: 2;
-    margin-right: 5px;
-    border-right: 1px solid black;
+    margin: 0px 2vw;
+    border-right: 1px dotted var(--gray-d);
     text-align: center;
 }
 #displayed-gallery-images {
@@ -411,16 +417,19 @@ th, td {
     align-content: center;
 }
 #displayed-gallery-images img {
-    flex-grow: 1;
     margin: 0px;
     padding: 0px;
     max-width: 500px;
     width: 30vw;
-    min-width: 100px;
+    min-width: 150px;
 }
 #other-galleries {
-    max-width: 25vw;
-    margin-left: 10px;
+    width: 25vw;
+    margin: 0px 1vw;
+}
+#other-galleries li {
+    font-family: gothamLight;
+    margin-bottom: 10px;
 }
 #gallery-list{
     margin: 0px;
@@ -434,7 +443,20 @@ th, td {
     margin: 2px 0px;
     padding: 0px;
 }
-
+@media(max-width: 600px){
+    #gallery-container {
+        flex-direction: column;
+    }
+    #displayed-gallery {
+        border: none;
+    }
+    #other-galleries {
+        margin-top: 20px;
+        border-top: 1px dotted var(--gray-d);
+        width: 65vw;
+        align-self: center;
+    }
+}
 
 
 
