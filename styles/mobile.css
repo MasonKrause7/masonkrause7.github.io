@@ -12,6 +12,7 @@
     padding: 1.5vh 2.5vw;
     transition: var(--t-time);
     font-size: 1.3rem;
+    font-family: gothamLight;
     text-decoration: none;
     color: var(--white);
 }
