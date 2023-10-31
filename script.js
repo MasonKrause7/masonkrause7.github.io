@@ -8,19 +8,24 @@ function getIdArg() {
   else return null;
 }
 
-//finds the event object with the id provided from getIdArg as eventN, N being the id number
-//uses the corresponding eventObj from events.js to render
+//takes the id passed as query param
+//uses the corresponding event object from events.js to render
 //the event information on the event.html page
 function renderEventInfo() {
   const id = getIdArg();
   const eventObj = window[id];
   let eventTitle = document.getElementById("event-title");
   if (eventObj.title) {
-    eventTitle.innerText = `${eventObj.title}`;
+    eventTitle.insertAdjacentHTML("beforeend",`${eventObj.title}`);
   } else {
     eventTitle.innerText = "Untitled Event";
   }
   eventTitle.style.display = "block";
+  
+  if(eventObj.subtitle) {
+    const eventSubTitle = document.getElementById("event-subtitle");
+    eventSubTitle.insertAdjacentHTML("beforeend", eventObj.subtitle);
+  }
 
   if (eventObj.date) {
     let eventDate = document.getElementById("event-date");
@@ -77,24 +82,30 @@ function renderEventInfo() {
   }
 }
 
-//finds the most recent event (event with highest id value) whose
+//finds the most recent event (the highest id event) and starts
+//pulling events backward by one until the 
 //id value should match the global variable currentEventNumber;
 //renders that event on the current event list of the events.html page
 function renderCurrentEvent() {
-  const currEvent = window[`event${currentEventNumber}`];
-  const currEventList = document.getElementById("current-event-list");
-  currEventList.insertAdjacentHTML(
-    "beforeend",
-    `
-        <li><a href="event.html?id=event${currentEventNumber}">${currEvent.title}</a></li>
-    `
-  );
+    let currEventIndex = totalNumberOfEvents;
+    for(let i = 0; i < numberOfEventsThatAreCurrent; i++){
+        const currEvent = window[`event${currEventIndex}`];
+        const currEventList = document.getElementById("current-event-list");
+        currEventList.insertAdjacentHTML(
+            "beforeend",
+            `
+            <li><a href="event.html?id=event${currEventIndex}">${currEvent.title}</a></li>
+            `
+        );
+        currEventIndex--;
+    }
+  
 }
 
-//finds past events (all events whose id is not the currentEventNumber)
+//finds past events (difference between totalNumberOfEvents and eventsThatAreCurrent)
 //renders each event as a link to its corresponding event.html?id=eventN page.
 function renderPastEvents() {
-  for (let i = 1; i < currentEventNumber; i++) {
+  for (let i = 1; i <= (totalNumberOfEvents-numberOfEventsThatAreCurrent); i++) {
     let obj = window[`event${i}`];
     const pastEventList = document.getElementById("past-event-list");
     pastEventList.insertAdjacentHTML(
@@ -121,7 +132,54 @@ window.onload = () => {
     renderEventInfo();
   } else if (window.location.href.includes("events.html")) {
     renderEventLists();
+  } else if(window.location.href.includes("gallery.html?")){
+    //render gallery with id from query param
+    renderSpecificGallery();
+    renderGalleryList();
+  } else if(window.location.href.includes("gallery.html")){
+    renderMostRecentGallery();
   }
 };
-
 /* END OF DYNAMIC EVENT RENDERING */
+/* BEGIN DYNAMIC GALLERY RENDERING */
+
+function renderMostRecentGallery(){
+  window.location.href=`gallery.html?id=gallery${totalNumberOfGalleries}`;
+}
+function renderGalleryList(){
+  const galId = getIdArg();
+  let id = galId.substring(galId.indexOf("y")+1);
+  const otherGalList = document.getElementById("gallery-list");
+  for(i = 1; i <= totalNumberOfGalleries; i++){
+    if(i != id){
+      otherGalList.insertAdjacentHTML(
+        "beforeend",
+        `<li><a href="gallery.html?id=gallery${i}">${window[`gallery${i}`].title}</a></li>`
+        );
+    }
+  }
+}
+function renderSpecificGallery(){
+  const id = getIdArg();
+  let galObj = window[id];
+  console.log(galObj);
+  const title = document.getElementById("displayed-gallery-title");
+  title.insertAdjacentHTML(
+    "beforeend",
+    `${galObj.title}`
+  );
+  const subtitle = document.getElementById("displayed-gallery-subtitle");
+  subtitle.insertAdjacentHTML(
+    "beforeend",
+    `${galObj.subtitle}`
+  );
+  const imageList = document.getElementById("displayed-gallery-images");
+  for(i = 0; i < Object.keys(galObj.images).length; i++){
+    imageList.insertAdjacentHTML(
+      "beforeend",
+      `<li><img src="${Object.keys(galObj.images)[i]}" alt="${galObj.images[Object.keys(galObj.images)[i]]}"></li>`
+    );
+  }
+}
+
+/* END OF DYNAMIC GALLERY RENDERING */
