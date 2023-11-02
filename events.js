@@ -1,4 +1,4 @@
-const totalNumberOfEvents = 5;
+const totalNumberOfEvents = 7;
 const numberOfEventsThatAreCurrent = 2;
 
 let eventList = {
@@ -7,7 +7,7 @@ let eventList = {
     season: "2009 Inaugural Event",
     date: "April 17, 2009",
     times: {
-      "11:30 AM - 2 PM": "",
+      "11:30 AM - 2:00 PM": "",
     },
     location: "Morgan University Center",
     details: {
@@ -58,8 +58,8 @@ let eventList = {
     season: "2010 Spring Program",
     date: "Thursday, April 22, 2010",
     times: {
-      "5:30 - 7:00 PM": " - Moveable Feast",
-      "7:00 PM": " - Program",
+      "5:30 - 7:00 PM": "Moveable Feast",
+      "7:00 PM": "Program",
     },
     location:
       "Customs House Museum and Cultural Center <br> 200 South Second St., Clarksville, TN",
@@ -76,15 +76,48 @@ let eventList = {
     season: "2010 Summer Program",
     date: "Thursday, July 29, 2010",
     times: {
-      "6:00 PM" : "Social Hour",
-      "7:00 PM" : "Speaker"
+      "6:00 PM": "Social Hour",
+      "7:00 PM": "Speaker",
     },
     location: "F&M Bank, Franklin Room<br>50 Franklin St., Clarksville",
     details: {
       description: "Wine, antipasto and dolce!",
       price: "Complimentary to members, $20 for non-members.",
-      
-    }
+      RSVP: "Reservation required, limited seating. Call 931-221-7618 to reserve your seat.",
+    },
+  },
+  event6: {
+    title: '"Visiting Writers Series: Richard Bausch"',
+    subtitle:
+      "Reading from his short story collection, <i>Something Is Out There</i><br>In conjunction with the Center of Excellence for the Creative Arts and <i>Zone 3</i>",
+    season: "2010 Fall Program",
+    date: "Thursday, October 28, 2010",
+    times: {
+      "7:00-7:45 PM": "Dessert Reception",
+      "8:00 PM": "Program commencement",
+    },
+    location:
+      "Dessert Reception will be held at the F.G. Woodward Library.<br>Program will be held at the Morgan University Center, room 303.",
+    details: {
+      note: "<strong>Reception for Sponsor and Benefactor level members</strong>($500 and up)",
+      receptionNotes:
+        "Hosted by President Tim & Mrs. Lee Nicholson Hall<br>5:00-6:30 PM, Thursday, November 11, 2010<br>APSU Pace Alumni Center at Emerald Hills",
+    },
+  },
+  event7: {
+    title: '"A Celebration of Scholarship"',
+    subtitle: "Creative and Scholarly Achievements at Austin Peay",
+    season: "2011 Winter Program",
+    date: "Thursday, 17 February, 2011",
+    times: {
+      "7:00 PM": "",
+    },
+    location: "F.G. Woodward Library",
+    details: {
+      description:
+        "A reception to honor the scholarly and creative achievements of APSU faculty, staff, and students.",
+      note: "An exhibit of scholarly creations will be on the 2nd (main) floor of Woodward Library from Feb. 17 through March 5.",
+    },
   },
 };
 export function getEvent(eventID) {
@@ -127,8 +160,6 @@ let galleryList = {
 };
 
 export function getGallery(galleryID) {
-  console.log(`galleryID = ${galleryID}`);
-  console.log(`galleryObj = ${galleryList[galleryID]}`);
   return galleryList[galleryID];
 }
 export function getTotalNumberOfGalleries() {

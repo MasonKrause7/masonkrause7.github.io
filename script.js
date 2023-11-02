@@ -6,6 +6,8 @@ import {
   getTotalNumberOfGalleries,
   getGallery,
 } from "./events.js";
+
+var numberOfPastEventFetches = 0;
 //looks for an arg called id and returns its value, returns null otherwise
 function getIdArg() {
   const urlArgs = new URLSearchParams(window.location.search);
@@ -19,6 +21,13 @@ function getIdArg() {
 //the event information on the event.html page
 function renderEventInfo(id) {
   const eventObj = getEvent(id);
+  if (id <= 0 || id > getTotalNumberOfEvents) {
+    window.location.href = "../events.html";
+  }
+  if (eventObj.season) {
+    let season = document.getElementById("event-season");
+    season.insertAdjacentHTML("beforeend", `${eventObj.season}`);
+  }
   let eventTitle = document.getElementById("event-title");
   if (eventObj.title) {
     eventTitle.insertAdjacentHTML("beforeend", `${eventObj.title}`);
@@ -43,7 +52,9 @@ function renderEventInfo(id) {
       eventTimeList.insertAdjacentHTML(
         "beforeend",
         `<li><p>${Object.keys(eventObj.times)[i]} ${
-          eventObj.times[i] == undefined ? "" : eventObj.times[i]
+          eventObj.times[Object.keys(eventObj.times)[i]] == ""
+            ? ""
+            : `&#x1F80A ${eventObj.times[Object.keys(eventObj.times)[i]]}`
         }</p></li>`
       );
     eventTimeList.style.display = "block";
@@ -101,13 +112,17 @@ function renderCurrentEventList() {
     if (currEventIndex == eventNumber) {
       currEventList.insertAdjacentHTML(
         "beforeend",
-        `<li>${currEvent.title}</li>`
+        `<li>${currEvent.season == undefined ? "" : currEvent.season + "<br>"}${
+          currEvent.title
+        }</li>`
       );
     } else {
       currEventList.insertAdjacentHTML(
         "beforeend",
         `
-              <li><a href="events.html?id=event${currEventIndex}">${currEvent.title}</a></li>
+              <li><a href="events.html?id=event${currEventIndex}">${
+          currEvent.season == undefined ? "" : currEvent.season + "<br>"
+        }${currEvent.title}</a></li>
               `
       );
     }
@@ -115,35 +130,81 @@ function renderCurrentEventList() {
   }
 }
 
+function clearPastEventList() {
+  const pastEventList = document.getElementById("past-event-list");
+  pastEventList.innerHTML = "";
+}
+
+//start with the event with startIndex and pulls events backward
+function renderSomePastEvents() {
+  clearPastEventList();
+  const id = getIdArg();
+  let eventNumber = id.substring(id.indexOf("t") + 1);
+
+  //numberOfPastEvents represents the starting point to start retreiving events for the pastEventsList
+  let numberOfPastEvents =
+    getTotalNumberOfEvents() - getNumberOfEventsThatAreCurrent();
+
+  const pastEventList = document.getElementById("past-event-list");
+
+  for (let i = numberOfPastEvents; i > numberOfPastEvents - 3; i--) {
+    renderPastEvent(i, eventNumber);
+  }
+  pastEventList.insertAdjacentHTML(
+    "beforeend",
+    `<li><a id="show-more-button">Show more past events...</a></li>`
+  );
+  const showMoreButton = document.getElementById("show-more-button");
+  showMoreButton.addEventListener("click", renderPastEventList);
+}
+
+function renderPastEvent(eventID, eventNumber) {
+  const pastEventList = document.getElementById("past-event-list");
+  let obj = getEvent(`event${eventID}`);
+  if (eventNumber == eventID) {
+    pastEventList.insertAdjacentHTML(
+      "beforeend",
+      `<li>${obj.season == undefined ? "" : obj.season + "<br>"}${
+        obj.title
+      }</li>`
+    );
+  } else {
+    pastEventList.insertAdjacentHTML(
+      "beforeend",
+      `
+          <li><a href="events.html?id=event${eventID}">${
+        obj.season == undefined ? "" : obj.season + "<br>"
+      }${obj.title}</a></li>
+      `
+    );
+  }
+}
 //finds past events (difference between totalNumberOfEvents and eventsThatAreCurrent)
 //renders each event as a link to its corresponding event.html?id=eventN page.
 function renderPastEventList() {
+  clearPastEventList();
   const id = getIdArg();
   let eventNumber = id.substring(id.indexOf("t") + 1);
-  for (
-    let i = 1;
-    i <= getTotalNumberOfEvents() - getNumberOfEventsThatAreCurrent();
-    i++
-  ) {
-    let obj = getEvent(`event${i}`);
-    const pastEventList = document.getElementById("past-event-list");
-    if (eventNumber == i) {
-      pastEventList.insertAdjacentHTML("beforeend", `<li>${obj.title}</li>`);
-    } else {
-      pastEventList.insertAdjacentHTML(
-        "beforeend",
-        `
-          <li><a href="events.html?id=event${i}">${obj.title}</a></li>
-      `
-      );
-    }
+  const pastEventList = document.getElementById("past-event-list");
+  //numberOfPastEvents represents the starting point to start retreiving events for the pastEventsList
+  let numberOfPastEvents =
+    getTotalNumberOfEvents() - getNumberOfEventsThatAreCurrent();
+
+  for (let i = numberOfPastEvents; i >= 1; i--) {
+    renderPastEvent(i, eventNumber);
   }
+  pastEventList.insertAdjacentHTML(
+    "beforeend",
+    `<li><a id="show-less-button">Show less...</a></li>`
+  );
+  const showLessButton = document.getElementById("show-less-button");
+  showLessButton.addEventListener("click", renderSomePastEvents);
 }
 
 //renders both lists on the events.html page.
 function renderEventLists() {
   renderCurrentEventList();
-  renderPastEventList();
+  renderSomePastEvents();
 }
 function renderMostRecentEvent() {
   window.location.href = `events.html?id=event${getTotalNumberOfEvents()}`;

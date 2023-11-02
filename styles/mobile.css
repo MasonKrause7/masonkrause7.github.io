@@ -83,6 +83,15 @@
     flex-direction: column;
     justify-content: space-evenly;
 }
+.about-additional-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#newsletters {
+    flex-grow: 2;
+    width: 100%;
+}
 
 
 
