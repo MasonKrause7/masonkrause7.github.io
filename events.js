@@ -124,6 +124,27 @@ let eventList = {
       "images/apsu-multicolor-logo.jpg": "Apsu Multicolor Logo",
     },
   },
+  /*event8: {
+    title: "",
+    subtitle: "",
+    season: "",
+    date: "",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "": "",
+    },
+    location: "",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      "" : "",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "" : "";
+      
+    }
+  },*/
 };
 export function getEvent(eventID) {
   return eventList[eventID];
@@ -162,9 +183,7 @@ let galleryList = {
       "/images/library-front-sculpture.jpg": "Library front sculpture",
     },
   },
-  gallery3: {
-    
-  }
+  //gallery3: {},
 };
 
 export function getGallery(galleryID) {
