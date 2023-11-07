@@ -1,7 +1,16 @@
+//totalNumberOfEvents should match the greatest event_ number in the eventList object.
+//this allows for quick rendering of event list instead of checking for greatest id in eventList
 const totalNumberOfEvents = 7;
+
+//numberOfEventsThatAreCurrent controls how many events will be shown in the "current" section of event list
+//should be used if there are multiple planned upcoming events
+//will render the greatest eventid down to greatestID - numberOfEventsThatAreCurrent, SO
+//new events that are added should always be given an ID that is 1 greater than the previous event.
 const numberOfEventsThatAreCurrent = 2;
 
+
 let eventList = {
+
   event1: {
     title: "Dinner on the River: An Evening with Michael Shoulders",
     season: "2009 Inaugural Event",
@@ -19,9 +28,10 @@ let eventList = {
           Pictures from this event can be found in the <a href="gallery.html">Gallery</a>. You can also read <a href="https://www.theleafchronicle.com/article/20090501/COMMUNITY/905010315/1086/Woodward+Library+Society+benefits+APSU+campus+library">The Leaf Chronicle Article</a> about this event.`,
     },
     images: {
-      //image-url : image-caption
+      //image-url : alt
     },
   },
+
   event2: {
     title: "TEL: Tennessee Electronic Library",
     season: "2009 Fall Event",
@@ -37,6 +47,7 @@ let eventList = {
     },
     images: {},
   },
+
   event3: {
     title: '"The Magic of Poetry, the Poetry of Magic" by Malcolm Glass',
     season: "2010 Winter Program",
@@ -52,6 +63,7 @@ let eventList = {
     },
     images: {},
   },
+
   event4: {
     title: "<i>The Society Social</i>, An Evening with Wade Bourne",
     subtitle: "Clarksville's own free-lance outdoor writer and broadcaster",
@@ -70,6 +82,7 @@ let eventList = {
     },
     images: {},
   },
+
   event5: {
     title: '"A Taste of Italia"',
     subtitle: "featuring Matthew Frank, author of <i>Barolo</i>",
@@ -86,6 +99,7 @@ let eventList = {
       RSVP: "Reservation required, limited seating. Call 931-221-7618 to reserve your seat.",
     },
   },
+
   event6: {
     title: '"Visiting Writers Series: Richard Bausch"',
     subtitle:
@@ -104,6 +118,7 @@ let eventList = {
         "Hosted by President Tim & Mrs. Lee Nicholson Hall<br>5:00-6:30 PM, Thursday, November 11, 2010<br>APSU Pace Alumni Center at Emerald Hills",
     },
   },
+
   event7: {
     title: '"A Celebration of Scholarship"',
     subtitle: "Creative and Scholarly Achievements at Austin Peay",
@@ -124,7 +139,9 @@ let eventList = {
       "images/apsu-multicolor-logo.jpg": "Apsu Multicolor Logo",
     },
   },
-  /*event8: {
+
+  /* TEMPLATE - COPY, PASTE, INCREMENT eventID by one and replace _, fill in values.
+  event_: {
     title: "",
     subtitle: "",
     season: "",
@@ -146,6 +163,8 @@ let eventList = {
     }
   },*/
 };
+
+//getters for event rendering
 export function getEvent(eventID) {
   return eventList[eventID];
 }
@@ -186,6 +205,7 @@ let galleryList = {
   //gallery3: {},
 };
 
+//getters for galleries
 export function getGallery(galleryID) {
   return galleryList[galleryID];
 }
