@@ -152,7 +152,7 @@ function renderSomePastEvents() {
   }
   pastEventList.insertAdjacentHTML(
     "beforeend",
-    `<li><a id="show-more-button">Show more past events...</a></li>`
+    `<li id="show-more-button-hoverable"><a id="show-more-button">Show more past events...</a></li>`
   );
   const showMoreButton = document.getElementById("show-more-button");
   showMoreButton.addEventListener("click", renderPastEventList);
@@ -195,7 +195,7 @@ function renderPastEventList() {
   }
   pastEventList.insertAdjacentHTML(
     "beforeend",
-    `<li><a id="show-less-button">Show less...</a></li>`
+    `<li id="show-less-button-hoverable"><a id="show-less-button">Show less...</a></li>`
   );
   const showLessButton = document.getElementById("show-less-button");
   showLessButton.addEventListener("click", renderSomePastEvents);

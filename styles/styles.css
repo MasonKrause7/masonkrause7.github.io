@@ -437,9 +437,10 @@ th, td {
     margin-bottom: 15px;
 }
 
-#past-event-fetcher:hover {
+#show-more-button-hoverable:hover, #show-less-button-hoverable:hover {
     cursor:pointer;
 }
+
 
 
 
