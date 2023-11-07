@@ -118,6 +118,11 @@ let eventList = {
         "A reception to honor the scholarly and creative achievements of APSU faculty, staff, and students.",
       note: "An exhibit of scholarly creations will be on the 2nd (main) floor of Woodward Library from Feb. 17 through March 5.",
     },
+    primaryPhoto: "images/library-front-sculpture.jpg",
+    images: {
+      "images/woodwardlibrary-sideshot.jpeg": "Woodward Library Sideshot",
+      "images/apsu-multicolor-logo.jpg": "Apsu Multicolor Logo",
+    },
   },
 };
 export function getEvent(eventID) {
@@ -157,6 +162,9 @@ let galleryList = {
       "/images/library-front-sculpture.jpg": "Library front sculpture",
     },
   },
+  gallery3: {
+    
+  }
 };
 
 export function getGallery(galleryID) {

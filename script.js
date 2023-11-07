@@ -7,7 +7,6 @@ import {
   getGallery,
 } from "./events.js";
 
-var numberOfPastEventFetches = 0;
 //looks for an arg called id and returns its value, returns null otherwise
 function getIdArg() {
   const urlArgs = new URLSearchParams(window.location.search);
@@ -39,6 +38,11 @@ function renderEventInfo(id) {
   if (eventObj.subtitle) {
     const eventSubTitle = document.getElementById("event-subtitle");
     eventSubTitle.insertAdjacentHTML("beforeend", eventObj.subtitle);
+  }
+
+  if (eventObj.primaryPhoto) {
+    const eventPrimaryPhoto = document.getElementById("pri-photo");
+    eventPrimaryPhoto.setAttribute("src", eventObj.primaryPhoto);
   }
 
   if (eventObj.date) {
@@ -87,8 +91,8 @@ function renderEventInfo(id) {
         "beforeend",
         `
         
-        <img src="${key}" alt="">
-        <p>${eventObj.images[key]}</p>
+        <img src="${key}" alt="${eventObj.images[key]}">
+        
         `
       );
     }
