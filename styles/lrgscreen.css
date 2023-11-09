@@ -1,67 +1,59 @@
-@media (min-width: 951px){
+@media (min-width: 950px){
 
-.mobile-nav{
-    display: none;
-}
-
-.lrgscreen-nav {
-    background-color: var(--black);
-}
-.lrgscreen-nav ul{
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-left: 0px;
-}
-.lrgscreen-nav ul li {
-    padding: 2vh 2vw;
-    border-radius: 5px;
-    transition: var(--t-time);
-}
-.lrgscreen-nav ul li:hover {
-    background-color: white;
-    cursor: pointer;
-}
-.lrgscreen-nav ul li a {
-    text-decoration: none;
-    font-size: 1.3rem;
-    color: var(--white);
-    transition: var(--t-time);
-}
-.lrgscreen-nav ul li:hover a{
-    color: var(--black);
-}
-
-#hero {
-    display: flex;
-    justify-content: space-between;
-}
-.lower-hero {
-    width: 50%;
-}
-.lrgscreen-hero-right {
-    width: 50%;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    margin-top: 1vh;
-    border: 1px solid var(--white);
-    border-radius: 5px;
-    padding-bottom: 2vh;
-    background-image: url("/images/libraryfront1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#quote blockquote {
-    margin-left: 0px;
-    padding-left: 1vw;
-    text-align: center;
-}
-#quote blockquote p {
-    text-align: center;
-    padding-left: 35%;
-}
-
-
-}
+    .mobile-nav{
+        display: none;
+    }
+    
+    .lrgscreen-nav ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 0px;
+    }
+    .lrgscreen-nav ul li {
+        padding: 1em 1em;
+        border-radius: 5px;
+        transition: var(--t-time);
+    }
+    .lrgscreen-nav ul li:hover {
+        background-color: white;
+        cursor: pointer;
+    }
+    .lrgscreen-nav ul li a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-family: gothamLight;
+        color: var(--white);
+        transition: var(--t-time);
+    }
+    .lrgscreen-nav ul li:hover a{
+        color: var(--black);
+    }
+    
+    .hero-content h3 {
+        font-size: 4rem;
+    }
+    
+    .about-page-content {
+        justify-content: space-evenly;
+    }
+    #event-display .pri-photo {
+        max-width: 200px;
+        max-height: 200px;
+        height: 3vh;
+        min-height: 200px;
+        position: absolute;
+        top: 120px;
+        left: 73%;
+    }
+    #event-images img {
+        max-width: 400px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    
+    
+    
+    
+    }
