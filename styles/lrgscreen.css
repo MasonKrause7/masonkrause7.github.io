@@ -37,12 +37,24 @@
     }
     
     .about-page-content {
+        display: flex;
         justify-content: space-evenly;
     }
+    .board {
+        width: 65%;
+        margin: 1px solid red;
+    }
+    .board-of-directors {
+        width: 100%;
+    }
+    .about-additional-info {
+        width: 25%;
+    }
+
+
     #event-display .pri-photo {
         max-width: 200px;
         max-height: 200px;
-        height: 3vh;
         min-height: 200px;
         position: absolute;
         top: 120px;

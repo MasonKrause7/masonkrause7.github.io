@@ -210,50 +210,6 @@ a {
     color: var(--white);
 }
 /* END HOMEPAGE */
-
-/* About Us Styling */
-.about-page-content {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1vh 2vw;
-}
-.about-content {
-    padding: 1vh 2vw;
-    font-family: gothamLight;
-    font-size: 1.2rem;
-}
-.page-content {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    /* flex-direction is specified in media queries (column for mobile) */
-    margin-bottom: 2vh;
-    padding: 1vh 2vw;
-    position: relative;
-}
-#newsletters {
-    width: 25vw;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0px;
-}
-
-#newsletters li {
-    margin: 3px 5px 0px 5px;
-}
-
-#newsletters li a:hover {
-    color: black;
-}
-
-#societyInfoHeading,
-#newslettersHeading {
-    text-align: left;
-    font-size: 1.3em;
-}
-/* END ABOUT US*/
-
 /* Membership Styling */
 #membership-container {
     display:flex;
@@ -283,15 +239,57 @@ th, td {
 }
 /* END MEMBERSHIP*/
 
+/* About Us Styling */
+
+.about-content {
+    padding: 1vh 2vw;
+    font-family: gothamLight;
+    font-size: 1.2rem;
+}
+.page-content {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* flex-direction is specified in media queries (column for mobile) */
+    margin-bottom: 2vh;
+    padding: 1vh 2vw;
+    position: relative;
+}
+#newsletters {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+}
+
+#newsletters li {
+    margin: 3px 5px 0px 5px;
+}
+
+#newsletters li a:hover {
+    color: black;
+}
+#additional-about-list li a:hover {
+    color: black;
+}
+#societyInfoHeading,
+#newslettersHeading {
+    text-align: left;
+    font-size: 1.3em;
+}
+/* END ABOUT US*/
+
+
 /* Board of Directors */
 .board h2{
     font-family: gothamBold;
 }
+
 .board-of-directors {
     list-style: none;
     margin-top: 0px;
     font-family: gothamBook;
-    width: 75%;
+    width: 100%;
     margin: 0px;
     padding: 0px;
 }

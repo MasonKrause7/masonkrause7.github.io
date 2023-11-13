@@ -7,6 +7,29 @@ import {
   getGallery,
 } from "./events.js";
 
+
+//runs automatically on window load
+//if the user clicks on an event,
+// this will route them to event.html and render the events information
+//if the user is on the events.html page,
+// this will render all of the past events and the current event
+window.onload = () => {
+  if (window.location.href.includes("events.html?")) {
+    const eventId = getIdArg();
+    renderEventInfo(eventId);
+    renderEventLists();
+  } else if (window.location.href.includes("events.html")) {
+    renderMostRecentEvent();
+  } else if (window.location.href.includes("gallery.html?")) {
+    //render gallery with id from query param
+    const galleryID = getIdArg();
+    renderSpecificGallery(galleryID);
+    renderGalleryList();
+  } else if (window.location.href.includes("gallery.html")) {
+    renderMostRecentGallery();
+  }
+};
+
 //looks for an arg called id and returns its value, returns null otherwise
 function getIdArg() {
   const urlArgs = new URLSearchParams(window.location.search);
@@ -43,6 +66,8 @@ function renderEventInfo(id) {
   if (eventObj.primaryPhoto) {
     const eventPrimaryPhoto = document.getElementById("pri-photo");
     eventPrimaryPhoto.setAttribute("src", eventObj.primaryPhoto);
+    const eventPhotoLink = document.getElementById("pri-photo-link");
+    eventPhotoLink.setAttribute("href", eventObj.primaryPhoto);
   }
 
   if (eventObj.date) {
@@ -90,9 +115,9 @@ function renderEventInfo(id) {
       eventImages.insertAdjacentHTML(
         "beforeend",
         `
-        
+        <a href="${key}">
         <img src="${key}" alt="${eventObj.images[key]}">
-        
+        </a>
         `
       );
     }
@@ -213,27 +238,7 @@ function renderEventLists() {
 function renderMostRecentEvent() {
   window.location.href = `events.html?id=event${getTotalNumberOfEvents()}`;
 }
-//runs automatically on window load
-//if the user clicks on an event,
-// this will route them to event.html and render the events information
-//if the user is on the events.html page,
-// this will render all of the past events and the current event
-window.onload = () => {
-  if (window.location.href.includes("events.html?")) {
-    const eventId = getIdArg();
-    renderEventInfo(eventId);
-    renderEventLists();
-  } else if (window.location.href.includes("events.html")) {
-    renderMostRecentEvent();
-  } else if (window.location.href.includes("gallery.html?")) {
-    //render gallery with id from query param
-    const galleryID = getIdArg();
-    renderSpecificGallery(galleryID);
-    renderGalleryList();
-  } else if (window.location.href.includes("gallery.html")) {
-    renderMostRecentGallery();
-  }
-};
+
 /* END OF DYNAMIC EVENT RENDERING */
 /* BEGIN DYNAMIC GALLERY RENDERING */
 
@@ -270,9 +275,9 @@ function renderSpecificGallery(id) {
   for (let i = 0; i < Object.keys(galObj.images).length; i++) {
     imageList.insertAdjacentHTML(
       "beforeend",
-      `<li><img src="${Object.keys(galObj.images)[i]}" alt="${
+      `<li><a href="${Object.keys(galObj.images)[i]}"><img src="${Object.keys(galObj.images)[i]}" alt="${
         galObj.images[Object.keys(galObj.images)[i]]
-      }"></li>`
+      }"></a></li>`
     );
   }
 }

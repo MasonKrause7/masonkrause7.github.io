@@ -79,19 +79,32 @@
         padding-left: 0vw;
         margin-left: 4vw;
     }
+
     .about-page-content {
         flex-direction: column;
-        justify-content: space-evenly;
+    }
+    .board {
+        width: 100%;
+    }
+    .board-of-directors {
+        width: 100%;
     }
     .about-additional-info {
         width: 100%;
-        display: flex;
-        justify-content: space-evenly;
+        margin-top: 25px;
+        
+        
+    }
+    #newsletter-container {
+        width: 100%;
+        
     }
     #newsletters {
-        flex-grow: 2;
         width: 100%;
+        display: flex;
     }
+    
+    
     
     #event-display .pri-photo {
         max-width: 200px;
