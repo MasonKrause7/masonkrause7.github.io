@@ -270,7 +270,7 @@ export function getNumberOfEventsThatAreCurrent() {
 /* END OF EVENTS */
 /* START OF GALLERIES */
 
-let totalNumberOfGalleries = 2;
+
 let galleryList = {
   gallery1: {
     title:
@@ -296,7 +296,7 @@ let galleryList = {
   },
   //gallery3: {},
 };
-
+let totalNumberOfGalleries = 2;
 //getters for galleries
 export function getGallery(galleryID) {
   return galleryList[galleryID];

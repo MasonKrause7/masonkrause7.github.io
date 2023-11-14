@@ -140,6 +140,9 @@ function renderCurrentEventList() {
       "beforeend",
       `<li>No current events right now...<br>Check back soon!</li>`
     );
+  } else if (getNumberOfEventsThatAreCurrent() == 1) {
+    const currListTitle = document.getElementById("current-event-list-title");
+    currListTitle.innerText = "Current Event";
   }
   for (let i = 0; i < getNumberOfEventsThatAreCurrent(); i++) {
     const currEvent = getEvent(`event${currEventIndex}`);
@@ -182,8 +185,12 @@ function renderSomePastEvents() {
 
   const pastEventList = document.getElementById("past-event-list");
 
-  const numberOfPastEventsToBeListed = 5;
-  for (let i = numberOfPastEvents; i > numberOfPastEvents - 5; i--) {
+  const numberOfPastEventsToBeListed = 6;
+  for (
+    let i = numberOfPastEvents;
+    i > numberOfPastEvents - numberOfPastEventsToBeListed;
+    i--
+  ) {
     renderPastEvent(i, eventNumber);
   }
   pastEventList.insertAdjacentHTML(
