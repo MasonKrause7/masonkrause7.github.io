@@ -1,16 +1,8 @@
-//totalNumberOfEvents should match the greatest event_ number in the eventList object.
-//this allows for quick rendering of event list instead of checking for greatest id in eventList
-const totalNumberOfEvents = 7;
-
-//numberOfEventsThatAreCurrent controls how many events will be shown in the "current" section of event list
-//should be used if there are multiple planned upcoming events
-//will render the greatest eventid down to greatestID - numberOfEventsThatAreCurrent, SO
-//new events that are added should always be given an ID that is 1 greater than the previous event.
-const numberOfEventsThatAreCurrent = 2;
-
-
+/*The eventList has properties for each event that the society has had. Each of these has its own properties that are the event details. */
+/*To add an event, simply copy the template at the end of the eventList, increment the event_ to the proper ID, fill in the event data, 
+and then increment the totalNumberOfEvents variable declared directly below the eventList */
+/* The totalNumberOfEvents variable should be the equal to the last event_ number in the eventList. */
 let eventList = {
-
   event1: {
     title: "Dinner on the River: An Evening with Michael Shoulders",
     season: "2009 Inaugural Event",
@@ -123,7 +115,7 @@ let eventList = {
     title: '"A Celebration of Scholarship"',
     subtitle: "Creative and Scholarly Achievements at Austin Peay",
     season: "2011 Winter Program",
-    date: "Thursday, 17 February, 2011",
+    date: "Thursday, February 17, 2011",
     times: {
       "7:00 PM": "",
     },
@@ -139,7 +131,98 @@ let eventList = {
       "images/apsu-multicolor-logo.jpg": "Apsu Multicolor Logo",
     },
   },
-
+  event8: {
+    title: "The Society Social",
+    subtitle: "An Evening with Dr. Gregg Steinberg",
+    season: "2011 Spring Program",
+    date: "Tuesday, March 29, 2011",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30 PM": "Social Hour",
+      "6:30 PM": "Dinner",
+      "7:15 PM": "Program",
+    },
+    location: "F&M Bank, Franklin Room, 50 Franklin St., Clarksville",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      notes: "Refreshments, wine, and punch will be served. Business casual.",
+      price: "No charge for Society members.",
+      RSVP: "RSVP by August 7 to 931-221-7618.",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event9: {
+    title: '"Creating Public Art"',
+    subtitle: "By Gregg Schlanger, M.F.A., Professor of Art",
+    season: "2011 Summer Program",
+    date: "Tuesday, June 21, 2011",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "6:30 PM": "Wine, punch & hors d'oeuvres reception.",
+    },
+    location:
+      "Residence of Mr. & Mrs. Larry Martin, 1983 Craigmont Blvd., Clarksville",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      RSVP: "RSVP by June 15 to 931-221-7222",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  // TEMPLATE - COPY, PASTE, INCREMENT eventID by one and replace _, fill in values.
+  event10: {
+    title: '"The Curious Case of the Tolerant Biggot"',
+    subtitle: "By President Tim Hall",
+    season: "2011 Fall Event",
+    date: "Monday, October 3, 2011",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30 PM": "Wine, punch & hors d'oeuvres reception",
+    },
+    location:
+      "Residence of Mr. & Mrs. Larry Martin, 1983 Craigmont Blvd., Clarksville",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Notes: "Membership drive! Please bring a friend.",
+      RSVP: "RSVP by September 28 to 931-221-7618.",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  // TEMPLATE - COPY, PASTE, INCREMENT eventID by one and replace _, fill in values.
+  event11: {
+    title: "An Evening with Stephanie Osborn",
+    subtitle:
+      "Science fiction writer, former rocket scientist (really!), and APSU alum",
+    season: "2012 Winter Program",
+    date: "Thursday, January 26, 2012",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:00 PM": "Hot cider and hors d'oeuvres reception.",
+    },
+    location:
+      'APSU Environmental Education Center aka "The Farm" - 1991 Pickens Rd., Clarksville',
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Notes: "Tours of the APSU Observatory.",
+      RSVP: "RSVP by January 20 to 931-221-7618.",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
   /* TEMPLATE - COPY, PASTE, INCREMENT eventID by one and replace _, fill in values.
   event_: {
     title: "",
@@ -149,20 +232,29 @@ let eventList = {
     times: {
       //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
       "": "",
+      
     },
     location: "",
     details: {
       //"<detailtype(not displayed)>" : "<value to be displayed>"
       "" : "",
+
     },
     primaryPhoto: "",
     images: {
       //"<src>" : "<alt>"
-      "" : "";
+      "" : "",
       
     }
   },*/
 };
+//totalNumberOfEvents should match the greatest event_ number in the eventList object.
+//this allows for quick rendering of event list instead of checking for greatest id in eventList
+const totalNumberOfEvents = 11;
+
+//numberOfEventsThatAreCurrent controls how many events will be shown in the "current" section of event list
+//the rest of the events will be shown in the past events list
+const numberOfEventsThatAreCurrent = 1;
 
 //getters for event rendering
 export function getEvent(eventID) {

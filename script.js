@@ -7,7 +7,6 @@ import {
   getGallery,
 } from "./events.js";
 
-
 //runs automatically on window load
 //if the user clicks on an event,
 // this will route them to event.html and render the events information
@@ -135,9 +134,16 @@ function renderCurrentEventList() {
   const id = getIdArg();
   let eventNumber = id.substring(id.indexOf("t") + 1);
   let currEventIndex = getTotalNumberOfEvents();
+  const currEventList = document.getElementById("current-event-list");
+  if (getNumberOfEventsThatAreCurrent() == 0) {
+    currEventList.insertAdjacentHTML(
+      "beforeend",
+      `<li>No current events right now...<br>Check back soon!</li>`
+    );
+  }
   for (let i = 0; i < getNumberOfEventsThatAreCurrent(); i++) {
     const currEvent = getEvent(`event${currEventIndex}`);
-    const currEventList = document.getElementById("current-event-list");
+
     if (currEventIndex == eventNumber) {
       currEventList.insertAdjacentHTML(
         "beforeend",
@@ -176,7 +182,8 @@ function renderSomePastEvents() {
 
   const pastEventList = document.getElementById("past-event-list");
 
-  for (let i = numberOfPastEvents; i > numberOfPastEvents - 3; i--) {
+  const numberOfPastEventsToBeListed = 5;
+  for (let i = numberOfPastEvents; i > numberOfPastEvents - 5; i--) {
     renderPastEvent(i, eventNumber);
   }
   pastEventList.insertAdjacentHTML(
@@ -275,9 +282,9 @@ function renderSpecificGallery(id) {
   for (let i = 0; i < Object.keys(galObj.images).length; i++) {
     imageList.insertAdjacentHTML(
       "beforeend",
-      `<li><a href="${Object.keys(galObj.images)[i]}"><img src="${Object.keys(galObj.images)[i]}" alt="${
-        galObj.images[Object.keys(galObj.images)[i]]
-      }"></a></li>`
+      `<li><a href="${Object.keys(galObj.images)[i]}"><img src="${
+        Object.keys(galObj.images)[i]
+      }" alt="${galObj.images[Object.keys(galObj.images)[i]]}"></a></li>`
     );
   }
 }
