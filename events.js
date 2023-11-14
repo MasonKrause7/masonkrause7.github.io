@@ -270,12 +270,10 @@ export function getNumberOfEventsThatAreCurrent() {
 /* END OF EVENTS */
 /* START OF GALLERIES */
 
-
 let galleryList = {
   gallery1: {
-    title:
-      'Woodward Library Society Fall 2012 Program: "The Politics of Memory: Archives, Historic Preservation, and Lessons of the Past,"',
-    subtitle: "by Dr. Susan Curtis, Purdue University, October 18, 2012",
+    title: "Dinner on the River: An Evening with Michael Shoulders",
+    subtitle: "",
     images: {
       //<img url> : <img alt attribute>
       "/images/hashtagGovs.jpeg": "Random img",
@@ -288,10 +286,32 @@ let galleryList = {
     subtitle:
       "Featuring Dr. Joe Trahern, Professor Emeritus of English, University of Tennessee April 16, 2013",
     images: {
-      "/images/woodwardlibrary-sideshot.jpeg":
-        "Side shot of Woodward Library Society",
-      "/images/apsu-multicolor-logo.jpg": "Multicolor logo",
-      "/images/library-front-sculpture.jpg": "Library front sculpture",
+      "/images/galleries/spring2013/spring2013_photo1.jpg":
+        "Society member at podium",
+      "/images/galleries/spring2013/spring2013_photo2.jpg":
+        "Society members hugging after a donation",
+      "/images/galleries/spring2013/spring2013_photo3.jpg":
+        "Society members talking",
+      "/images/galleries/spring2013/spring2013_photo4.jpg":
+        "Society members hugging",
+      "/images/galleries/spring2013/spring2013_photo5.jpg": "Society speaker",
+      "/images/galleries/spring2013/spring2013_photo6.jpg": "Society speakers",
+      "/images/galleries/spring2013/spring2013_photo7.jpg":
+        "Society speaker at podium",
+      "/images/galleries/spring2013/spring2013_photo8.jpg":
+        "Society speaker at podium",
+      "/images/galleries/spring2013/spring2013_photo9.jpg":
+        "Wide view of society members and attendees in their seats",
+      "/images/galleries/spring2013/spring2013_photo10.jpg":
+        "Wide view of society members and attendees in their seats",
+      "/images/galleries/spring2013/spring2013_photo11.jpg":
+        "Society speakers preparing plaque at podium",
+      "/images/galleries/spring2013/spring2013_photo12.jpg":
+        "Society speakers laughing while preparing plaque at podium",
+      "/images/galleries/spring2013/spring2013_photo13.jpg":
+        "Society speakers presenting plaque at podium",
+      "/images/galleries/spring2013/spring2013_photo14.jpg":
+        "Society members presenting a giant check for 13,121 dollars",
     },
   },
   //gallery3: {},

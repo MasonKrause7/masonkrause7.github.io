@@ -472,11 +472,19 @@ th, td {
     align-content: center;
 }
 #displayed-gallery-images img {
-    margin: 0px;
+    flex-grow: 1;
+    margin: 10px 15px;
     padding: 0px;
-    max-width: 500px;
-    width: 30vw;
+    max-width: 400px;
+    max-height:500px;
+    width: 20vw;
     min-width: 150px;
+}
+#displayed-gallery-title {
+    font-size: 23pt;
+}
+#displayed-gallery-subtitle {
+    font-size: 15pt;
 }
 #other-galleries {
     width: 25vw;
