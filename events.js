@@ -276,11 +276,94 @@ let galleryList = {
     subtitle: "",
     images: {
       //<img url> : <img alt attribute>
-      "/images/hashtagGovs.jpeg": "Random img",
-      "/images/libraryfront1.jpg": "",
+      "/images/galleries/dinnerontheriver/WS001.jpg":
+        "Water Street Event Center front entrance sign",
+      "/images/galleries/dinnerontheriver/WS005.jpg": "Entry table",
+      "/images/galleries/dinnerontheriver/WS013.jpg":
+        "Wine bottle on entry table",
+      "/images/galleries/dinnerontheriver/WS015.jpg":
+        "Woodward Library Society program with dining set",
+      "/images/galleries/dinnerontheriver/WS016.jpg":
+        "Wide view of the tables with dining sets layed out",
+      "/images/galleries/dinnerontheriver/WS017.jpg":
+        "Michael Shoulders with society member",
+      "/images/galleries/dinnerontheriver/WS018.jpg":
+        "Books on entry way table",
+      "/images/galleries/dinnerontheriver/WS022.jpg":
+        "Society members gathered around a table",
+      "/images/galleries/dinnerontheriver/WS029.jpg": "Three society members",
+      "/images/galleries/dinnerontheriver/WS030.jpg": "Society member",
+      "/images/galleries/dinnerontheriver/WS033.jpg":
+        "Society members chatting",
+      "/images/galleries/dinnerontheriver/WS034.jpg":
+        "Society members chatting",
+      "/images/galleries/dinnerontheriver/WS035.jpg":
+        "Society members seated at their dining table",
+      "/images/galleries/dinnerontheriver/WS037.jpg":
+        "Society members chatting",
+      "/images/galleries/dinnerontheriver/WS040.jpg":
+        "Society members chatting",
+      "/images/galleries/dinnerontheriver/WS041.jpg":
+        "Violinist performing a musical number",
+      "/images/galleries/dinnerontheriver/WS042.jpg":
+        "Society members gathered after the program",
+      "/images/galleries/dinnerontheriver/WS044.jpg": "Society member",
+      "/images/galleries/dinnerontheriver/WS045.jpg": "Society members",
+      "/images/galleries/dinnerontheriver/WS048.jpg":
+        "Society members chatting",
+      "/images/galleries/dinnerontheriver/WS051.jpg":
+        "Wide view of all society members at their dining tables",
+      "/images/galleries/dinnerontheriver/WS053.jpg":
+        "Michael Shoulders seated with guest",
+      "/images/galleries/dinnerontheriver/WS055.jpg": "Society members",
+      "/images/galleries/dinnerontheriver/WS059.jpg": "Society members",
+      "/images/galleries/dinnerontheriver/WS060.jpg": "Society members",
+      "/images/galleries/dinnerontheriver/WS061.jpg": "Society members",
+      "/images/galleries/dinnerontheriver/WS062.jpg": "Society members",
+      "/images/galleries/dinnerontheriver/WS064.jpg": "Society members",
+      "/images/galleries/dinnerontheriver/WS068.jpg":
+        "Wide view of society speaker and members",
+      "/images/galleries/dinnerontheriver/WS070.jpg":
+        "Wide view of society speaker and members",
+      "/images/galleries/dinnerontheriver/WS083.jpg":
+        "Society speakers presenting awards",
+      "/images/galleries/dinnerontheriver/WS086.jpg":
+        "Society speakers drawing raffle ticket",
     },
   },
   gallery2: {
+    title:
+      "Woodward Library Society Fall 2012 Program:<br>The Politics of Memory: Archives, Historic Preservation, and Lessons of the Past",
+    subtitle: "by Dr. Susan Curtis, Purdue University<br>October 18, 2012",
+    images: {
+      "images/galleries/politicsofmemory/PoliticsOfMemory1.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory2.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory6.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory7.jpg": "",
+
+      "images/galleries/politicsofmemory/PoliticsOfMemory4.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory5.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory8.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory9.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory10.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory11.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory12.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory13.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory14.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory15.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory16.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory17.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory18.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory19.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory20.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory21.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory22.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory23.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory24.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory25.jpg": "",
+    },
+  },
+  gallery3: {
     title:
       "Woodward Library Society 2013 Spring Social: Enter Laughing (But Quietly Please!): Amusing Anecdotes from a Life in Libraries",
     subtitle:
@@ -316,7 +399,7 @@ let galleryList = {
   },
   //gallery3: {},
 };
-let totalNumberOfGalleries = 2;
+let totalNumberOfGalleries = 3;
 //getters for galleries
 export function getGallery(galleryID) {
   return galleryList[galleryID];
