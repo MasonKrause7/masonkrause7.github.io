@@ -93,6 +93,7 @@
 
     .about-page-content {
         flex-direction: column;
+        margin: 5px 20px;
     }
     .board {
         width: 100%;

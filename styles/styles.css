@@ -269,6 +269,15 @@ th, td {
 #newsletters li a:hover {
     color: black;
 }
+#pdf-container {
+    max-width: 100%;
+    width: 100vw;
+    height: 80vh;
+}
+#pdf-iframe {
+    width: 100%;
+    height: 100%;
+}
 #additional-about-list li a:hover {
     color: black;
 }
