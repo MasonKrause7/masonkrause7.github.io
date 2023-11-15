@@ -30,6 +30,12 @@
         position: relative;
     }
     
+    #down-arrow {
+        position: absolute;
+        top: 20%;
+        left:81%;
+    }
+    
     #submenu {
         display: none; 
         position: absolute;

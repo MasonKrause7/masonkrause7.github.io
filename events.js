@@ -125,11 +125,8 @@ let eventList = {
         "A reception to honor the scholarly and creative achievements of APSU faculty, staff, and students.",
       note: "An exhibit of scholarly creations will be on the 2nd (main) floor of Woodward Library from Feb. 17 through March 5.",
     },
-    primaryPhoto: "images/library-front-sculpture.jpg",
-    images: {
-      "images/woodwardlibrary-sideshot.jpeg": "Woodward Library Sideshot",
-      "images/apsu-multicolor-logo.jpg": "Apsu Multicolor Logo",
-    },
+    primaryPhoto: "",
+    images: {},
   },
   event8: {
     title: "The Society Social",
@@ -176,7 +173,6 @@ let eventList = {
       "": "",
     },
   },
-  // TEMPLATE - COPY, PASTE, INCREMENT eventID by one and replace _, fill in values.
   event10: {
     title: '"The Curious Case of the Tolerant Biggot"',
     subtitle: "By President Tim Hall",
@@ -199,7 +195,6 @@ let eventList = {
       "": "",
     },
   },
-  // TEMPLATE - COPY, PASTE, INCREMENT eventID by one and replace _, fill in values.
   event11: {
     title: "An Evening with Stephanie Osborn",
     subtitle:
@@ -222,6 +217,55 @@ let eventList = {
       //"<src>" : "<alt>"
       "": "",
     },
+  },
+  event12: {
+    title: "Smoke: The Tennessee-Kentucky Tobacco Wars",
+    subtitle:
+      "with David Alford<br>Author, composer, actor, director and producer",
+    season: "2012 Spring Social",
+    date: "Tuesday, March 20, 2012",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30-8:30 PM": "",
+      "5:30 PM": "Social Hour",
+      "6:30 PM": "Dinner",
+      "7:30 PM": "Entertainment",
+    },
+    location: "F&M Bank, Franklin Room<br>50 Franklin St., Clarksville",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Price:
+        "$45 each for Society members; $55 for non-members<br>Call 931-221-7618 to purchase tickets",
+      RSVP: "RSVP by March 15 to 931-221-7618",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event13: {
+    title: "",
+    subtitle: "",
+    season: "",
+    date: "",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "": "",
+      
+    },
+    location: "",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      "" : "",
+
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "" : "",
+      
+    }
   },
   /* TEMPLATE - COPY, PASTE, INCREMENT eventID by one and replace _, fill in values.
   event_: {
@@ -250,7 +294,7 @@ let eventList = {
 };
 //totalNumberOfEvents should match the greatest event_ number in the eventList object.
 //this allows for quick rendering of event list instead of checking for greatest id in eventList
-const totalNumberOfEvents = 11;
+const totalNumberOfEvents = 12;
 
 //numberOfEventsThatAreCurrent controls how many events will be shown in the "current" section of event list
 //the rest of the events will be shown in the past events list
@@ -369,32 +413,37 @@ let galleryList = {
     subtitle:
       "Featuring Dr. Joe Trahern, Professor Emeritus of English, University of Tennessee April 16, 2013",
     images: {
-      "/images/galleries/spring2013/spring2013_photo1.jpg":
-        "Society member at podium",
-      "/images/galleries/spring2013/spring2013_photo2.jpg":
-        "Society members hugging after a donation",
-      "/images/galleries/spring2013/spring2013_photo3.jpg":
-        "Society members talking",
-      "/images/galleries/spring2013/spring2013_photo4.jpg":
-        "Society members hugging",
-      "/images/galleries/spring2013/spring2013_photo5.jpg": "Society speaker",
-      "/images/galleries/spring2013/spring2013_photo6.jpg": "Society speakers",
       "/images/galleries/spring2013/spring2013_photo7.jpg":
         "Society speaker at podium",
+
       "/images/galleries/spring2013/spring2013_photo8.jpg":
         "Society speaker at podium",
+      "/images/galleries/spring2013/spring2013_photo1.jpg":
+        "Society member at podium",
+      "/images/galleries/spring2013/spring2013_photo3.jpg":
+        "Society members talking",
+
+      "/images/galleries/spring2013/spring2013_photo5.jpg": "Society speaker",
+      "/images/galleries/spring2013/spring2013_photo6.jpg": "Society speakers",
+
       "/images/galleries/spring2013/spring2013_photo9.jpg":
         "Wide view of society members and attendees in their seats",
       "/images/galleries/spring2013/spring2013_photo10.jpg":
         "Wide view of society members and attendees in their seats",
       "/images/galleries/spring2013/spring2013_photo11.jpg":
         "Society speakers preparing plaque at podium",
-      "/images/galleries/spring2013/spring2013_photo12.jpg":
-        "Society speakers laughing while preparing plaque at podium",
+
       "/images/galleries/spring2013/spring2013_photo13.jpg":
         "Society speakers presenting plaque at podium",
       "/images/galleries/spring2013/spring2013_photo14.jpg":
         "Society members presenting a giant check for 13,121 dollars",
+      "/images/galleries/spring2013/spring2013_photo12.jpg":
+        "Society speakers laughing while preparing plaque at podium",
+      "/images/galleries/spring2013/spring2013_photo2.jpg":
+        "Society members hugging after a donation",
+
+      "/images/galleries/spring2013/spring2013_photo4.jpg":
+        "Society members hugging",
     },
   },
   //gallery3: {},

@@ -291,6 +291,7 @@ th, td {
     font-family: gothamBook;
     width: 100%;
     margin: 0px;
+    margin-bottom: 15px;
     padding: 0px;
 }
 .director {
@@ -467,7 +468,7 @@ th, td {
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     align-content: center;
 }
@@ -475,8 +476,8 @@ th, td {
     flex-grow: 1;
     margin: 10px 15px;
     padding: 0px;
-    max-width: 400px;
-    max-height:500px;
+    max-width: 300px;
+    max-height:450px;
     
     min-width: 150px;
 }
@@ -508,7 +509,7 @@ th, td {
 }
 #gallery-list li{
     margin-bottom: 10px;
-    
+    list-style: none;
 }
 #other-galleries a p {
     margin: 2px 0px;
