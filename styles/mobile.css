@@ -33,7 +33,12 @@
     #down-arrow {
         position: absolute;
         top: 20%;
-        left:81%;
+        left:83%;
+    }
+    @media(max-width: 575px){
+        #down-arrow {
+            left: 86%;
+        }
     }
     
     #submenu {
