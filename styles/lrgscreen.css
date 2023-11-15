@@ -53,11 +53,11 @@
 
 
     #event-display .pri-photo {
-        max-width: 200px;
-        max-height: 200px;
+        max-width: 210px;
+        max-height: 225px;
         min-height: 200px;
         position: absolute;
-        top: 120px;
+        top: 110px;
         left: 73%;
     }
     #event-images img {

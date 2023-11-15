@@ -26,7 +26,7 @@ window.onload = () => {
     renderGalleryList();
   } else if (window.location.href.includes("gallery.html")) {
     renderMostRecentGallery();
-  } else if (window.location.href.includes("newsletter.html?")){
+  } else if (window.location.href.includes("newsletter.html?")) {
     setNewsletterSeason();
   }
 };
@@ -108,6 +108,9 @@ function renderEventInfo(id) {
       );
     }
     eventDetails.style.display = "block";
+  } else {
+    const detailsHeaders = document.getElementById("details-header");
+    detailsHeaders.style.display = "none";
   }
   if (eventObj.images) {
     let eventImages = document.getElementById("event-images");
@@ -300,13 +303,15 @@ function renderSpecificGallery(id) {
 
 /* END OF DYNAMIC GALLERY RENDERING */
 /* Newsletter rendering */
-function setNewsletterSeason(){
+function setNewsletterSeason() {
   const urlArgs = new URLSearchParams(window.location.search);
   const season = urlArgs.get("season");
-  if(season){
+  if (season) {
     const frame = document.getElementById("pdf-iframe");
     console.log(`./images/newsletters/WLSNewsletter-${season}.pdf`);
-    frame.setAttribute("src", `./images/newsletters/WLSNewsletter-${season}.pdf`);
+    frame.setAttribute(
+      "src",
+      `./images/newsletters/WLSNewsletter-${season}.pdf`
+    );
   }
 }
-

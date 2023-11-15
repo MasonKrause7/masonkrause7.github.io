@@ -17,7 +17,7 @@ let eventList = {
       speakerDescription: `Mr. Shoulders is a Clarksville resident, a much sought after speaker, and a nationally known author of children's books, including V is for Volunteer and Count on Us: A Tennessee Number Book.
           Five of Mr. Shoulders' books signed by the author will be given away as door prizes.`,
       moreInfo: `For more information, please contact the Library Director's office at 931-221-7618.
-          Pictures from this event can be found in the <a href="gallery.html">Gallery</a>. You can also read <a href="https://www.theleafchronicle.com/article/20090501/COMMUNITY/905010315/1086/Woodward+Library+Society+benefits+APSU+campus+library">The Leaf Chronicle Article</a> about this event.`,
+          Pictures from this event can be found in the <a href="gallery.html">Gallery</a>.`,
     },
     images: {
       //image-url : alt
@@ -245,31 +245,187 @@ let eventList = {
     },
   },
   event13: {
-    title: "",
-    subtitle: "",
-    season: "",
-    date: "",
+    title: "Dinner at the Library with Barry Kitterman",
+    subtitle: "Professor of Creative Writing at Austin Peay",
+    season: "2012 Summer Program",
+    date: "Tuesday, August 14, 2012",
     times: {
       //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
-      "": "",
-      
+      "5:30-8:30 PM": "",
+      "5:30": "Reception",
+      "6:45": "Dinner and Reading",
     },
-    location: "",
+    location:
+      "Reception: Archwood<br>Dinner and Presentation: Woodward Library",
     details: {
       //"<detailtype(not displayed)>" : "<value to be displayed>"
-      "" : "",
-
+      Price: "$15 per person to help offset the cost of the dinner.",
+      RSVP: "Call 931-221-7618 RSVP and purchase tickets by August 8.",
     },
     primaryPhoto: "",
     images: {
       //"<src>" : "<alt>"
-      "" : "",
-      
-    }
+      "": "",
+    },
+  },
+
+  event14: {
+    title: '"Lester A. Walton"',
+    subtitle:
+      "with Dr. Susan Curtis<br>Professor of History at Purdue University",
+    season: "2012 Fall Program I",
+    date: "Wednesday, October 17, 2012",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "3:00 PM": "",
+    },
+    location: "APSU Honors Commons (Memorial Health Building)",
+
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event15: {
+    title:
+      '"The Politics of Memory: Archives, Historic Preservation, and Lessons of the Past"',
+    subtitle:
+      "with Dr. Susan Curtis<br>Professor of History at Purdue University",
+    season: "2012 Fall Program II",
+    date: "Thursday, October 18, 2012",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30-6:30 PM":
+        "Members Reception held in the Wilbur N. Daniel African American Cultural Center from 5:30-6:30 PM.",
+      "7:00 PM": "Event start in the Morgan University Center.",
+    },
+    location: "APSU Morgan University Center Ballroom B/C.",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      RSVP: "RSVP by October 12 to 931-221-7618",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+
+  event16: {
+    title: '"A Celebration of Scholarship"',
+    subtitle:
+      "Spotlighting the scholarly and creative accomplishments of Austin Peay's faculty, staff, and students",
+    season: "2013 Winter Program",
+    date: "Thursday, February 21, 2013",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "7:00 PM": "",
+    },
+    location: "Felix G. Woodward Library",
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event17: {
+    title: "Enter Laughing (But Quietly, Please!)",
+    subtitle: "Amusing Anecdotes from a Life in Libraries",
+    season: "2013 Spring Social",
+    date: "Tuesday, April 16, 2013",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30 PM": "Social Hour",
+      "6:30 PM": "Dinner",
+      "7:30 PM": "Program",
+    },
+    location: "F&M Bank, Franklin Room",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      dinner:
+        "Choice of three dinner entrees: chicken cordon bleu, grilled lamb chops, or vegetarian.",
+      RSVP: "Limited seating; please RSVP to 931-221-7618 before April 8.",
+      Price:
+        "$45 for Woodward Library Society Members<br>$55 for non-members<br>**Some members may not have to pay because of their membership level; please call 931-221-7618 for details.",
+      Gallery:
+        'The gallery for this event can be viewed <a href="gallery.html?id=gallery3">here</a>.',
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+
+  event18: {
+    title: "Picnic on the Patio",
+    subtitle:
+      "with Dr. John Butler<br>Talking about his new book on the Model T",
+    season: "2013 Summer Program",
+    date: "Monday, August 12, 2013",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30 PM": "",
+    },
+    location: "Pace Alumni Center, APSU",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Description: "Picnic dinner, dessert, soft drinks & wine.",
+      RSVP: "RSVP to 931-221-7618 by August 7.",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event19: {
+    title: '"Paper Art Engineering"',
+    subtitle: "with Kell Black",
+    season: "2013 Fall Program",
+    date: "Tuesday, October 29, 2013",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30 PM": "",
+    },
+    location: "Woodward Library, room 232",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      RSVP: "RSVP to 931-221-7618",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event20: {
+    title: "Sue Freeman Culverhouse",
+    subtitle:
+      "Author of <i>Tennessee Literary Luminaries: From Cormac McCarthy to Robert Penn Warren</i>",
+    season: "2014 Winter Program",
+    date: "March 20, 2014",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:00 PM": "Refreshments",
+      "5:30 PM": "Speaker",
+      "Immediatly Afterwards": "Book signing",
+    },
+    location: "Felix G. Woodward Library, room 232",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      RSVP: "Please RSVP by March 18 to 931-221-7618.",
+    },
+    primaryPhoto: "./images/events/2014WinterProgram-PrimaryImage.jpg",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
   },
   /* TEMPLATE - COPY, PASTE, INCREMENT eventID by one and replace _, fill in values.
   event_: {
-    title: "",
+    title: '',
     subtitle: "",
     season: "",
     date: "",
@@ -294,7 +450,7 @@ let eventList = {
 };
 //totalNumberOfEvents should match the greatest event_ number in the eventList object.
 //this allows for quick rendering of event list instead of checking for greatest id in eventList
-const totalNumberOfEvents = 12;
+const totalNumberOfEvents = 20;
 
 //numberOfEventsThatAreCurrent controls how many events will be shown in the "current" section of event list
 //the rest of the events will be shown in the past events list

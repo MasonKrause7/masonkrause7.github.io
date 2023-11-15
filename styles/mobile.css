@@ -117,12 +117,15 @@
     }
     
     
-    
+    #event-display {
+        width: 90vw;
+        align-items: center;
+        margin-right: 15px;
+    }
     #event-display .pri-photo {
         max-width: 200px;
-        max-height: 200px;
-        height: 3vh;
-        min-height: 200px;
+        max-height: 250px;
+        margin-left: 25%;
         
     }
     #event-display img {

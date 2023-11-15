@@ -447,9 +447,10 @@ th, td {
         align-self: center;
     }
     #event-display {
-        width: 100vw;
+        width: 95vw;
         border: none;
     }
+    
 }
 #event-details p {
     margin-bottom: 15px;
