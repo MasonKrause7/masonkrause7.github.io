@@ -122,13 +122,19 @@
         align-items: center;
         margin-right: 15px;
     }
+    #event-images {
+        display: flex;
+        justify-content: center;
+        
+    }
     #event-display .pri-photo {
         max-width: 200px;
         max-height: 250px;
-        margin-left: 25%;
+        margin-top: 10%;
         
     }
     #event-display img {
+        max-height:450px;
         max-width: 300px;
         margin: 2px 2px;
     }

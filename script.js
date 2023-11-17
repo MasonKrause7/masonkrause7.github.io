@@ -75,8 +75,12 @@ function renderEventInfo(id) {
     let eventDate = document.getElementById("event-date");
     eventDate.insertAdjacentHTML("beforeend", `<p>${eventObj.date}</p>`);
     eventDate.style.display = "block";
+  } else {
+    const eventDate = document.getElementById("event-date");
+    const eventDateHeader = document.getElementById("event-date-header");
+    eventDateHeader.style.display = "none";
   }
-  if (eventObj.times) {
+  if (Object.keys(eventObj.times)[0]) {
     let eventTimeList = document.getElementById("event-time-list");
     for (let i = 0; i < Object.keys(eventObj.times).length; i++)
       eventTimeList.insertAdjacentHTML(
@@ -89,6 +93,7 @@ function renderEventInfo(id) {
       );
     eventTimeList.style.display = "block";
   }
+
   if (eventObj.location) {
     let eventLocation = document.getElementById("event-location");
     eventLocation.insertAdjacentHTML(
@@ -96,8 +101,11 @@ function renderEventInfo(id) {
       `<p>${eventObj.location}</p>`
     );
     eventLocation.style.display = "block";
+  } else {
+    const locationHeader = document.getElementById("event-location-header");
+    locationHeader.style.display = "none";
   }
-  if (eventObj.details) {
+  if (Object.keys(eventObj.details)[0]) {
     let eventDetails = document.getElementById("event-details");
     //iterate through the events details and display them
     for (let i = 0; i < Object.keys(eventObj.details).length; i++) {
@@ -112,7 +120,7 @@ function renderEventInfo(id) {
     const detailsHeaders = document.getElementById("details-header");
     detailsHeaders.style.display = "none";
   }
-  if (eventObj.images) {
+  if (Object.keys(eventObj.images)[0]) {
     let eventImages = document.getElementById("event-images");
     for (let i = 0; i < Object.keys(eventObj.images).length; i++) {
       let key = Object.keys(eventObj.images)[i];

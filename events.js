@@ -222,7 +222,7 @@ let eventList = {
     title: "Smoke: The Tennessee-Kentucky Tobacco Wars",
     subtitle:
       "with David Alford<br>Author, composer, actor, director and producer",
-    season: "2012 Spring Social",
+    season: "2012 Spring Society Social",
     date: "Tuesday, March 20, 2012",
     times: {
       //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
@@ -332,7 +332,7 @@ let eventList = {
   event17: {
     title: "Enter Laughing (But Quietly, Please!)",
     subtitle: "Amusing Anecdotes from a Life in Libraries",
-    season: "2013 Spring Social",
+    season: "2013 Spring Society Social",
     date: "Tuesday, April 16, 2013",
     times: {
       //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
@@ -359,9 +359,8 @@ let eventList = {
   },
 
   event18: {
-    title: "Picnic on the Patio",
-    subtitle:
-      "with Dr. John Butler<br>Talking about his new book on the Model T",
+    title: "Picnic on the Patio with Dr. John Butler",
+    subtitle: "Talking about his new book on the Model T",
     season: "2013 Summer Program",
     date: "Monday, August 12, 2013",
     times: {
@@ -401,9 +400,9 @@ let eventList = {
     },
   },
   event20: {
-    title: "Sue Freeman Culverhouse",
-    subtitle:
-      "Author of <i>Tennessee Literary Luminaries: From Cormac McCarthy to Robert Penn Warren</i>",
+    title:
+      '"Tennessee Literary Luminaries: From Cormac McCarthy to Robert Penn Warren"',
+    subtitle: "by Sue Freeman Culverhouse",
     season: "2014 Winter Program",
     date: "March 20, 2014",
     times: {
@@ -423,7 +422,132 @@ let eventList = {
       "": "",
     },
   },
-  /* TEMPLATE - COPY, PASTE, INCREMENT eventID by one and replace _, fill in values.
+  event21: {
+    title: "<i>The Performing Life: A Singer's Guide to Survival</i>",
+    subtitle: "featuring Dr. Sharon Mabry",
+    season: "2014 Spring Society Social",
+    date: "Monday, April 21, 2014",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30 PM": "Social Hour",
+      "6:30 PM": "Dinner",
+      "7:30 PM": "Program",
+    },
+    location: "F&M Bank, Franklin Room<br>Franklin St., Clarksville, TN",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Notes:
+        "The program will include a raffle for concert tickets, CDs, and Dr. Mabry's book.<br>Raffle tickets will be sold at the event.",
+      Price: "$45 for society members; $65 for non-members.",
+      RSVP: "Seating is limited, please RSVP by April 12. Call 931-221-7618 for details.",
+    },
+    primaryPhoto: "./images/events/2014SpringProgram-PrimaryImage.jpg",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event22: {
+    title: "Meet Dr. Alisa White",
+    subtitle: "the 10th President of APSU",
+    season: "2014 Summer Program",
+    date: "Tuesday, August 12, 2014",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:00 PM": "",
+    },
+    location: "Pace Alumni Center at Emerald Hill, APSU",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Description:
+        "Refreshments, wine & punch will be served.<br>Business casual.",
+      Price: "No charge for Society members.",
+      RSVP: "RSVP by August 7 to 931-221-7618.",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event23: {
+    title:
+      "<i>The Diary of Nannie Haskins Williams: A Southern Woman's Story of Rebellion and Reconstruction, 1863-1890</i>",
+    subtitle:
+      "with co-editors Minoa Uffelman, Ellen Kanervo, Phyllis Smith, & Eleanor Williams",
+    season: "2014 Fall Program",
+    date: "November 3, 2014",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:00 PM": "Refreshments",
+      "5:30 PM": "Presentation",
+    },
+    location: "Governors Stadium, Club Level (3rd Floor)",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      "": "",
+    },
+    primaryPhoto: "./images/events/2014FallProgram-PrimaryImage.jpg",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event24: {
+    title: '"A Celebration of Scholarship"',
+    subtitle:
+      "Spotlighting the scholarly and creative accomplishments of Austin Peay's faculty, staff, and students.",
+    season: "2015 Winter Program",
+    date: "February 2015, specific date and time to be announced",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "": "",
+    },
+    location: "Felix G. Woodward Library",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      "": "",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+
+  event25: {
+    title: "Inner Vision: Where Insight Sets the Scene",
+    subtitle:
+      "David Meador<br>Author, motivational speaker, businessman, and blind golf champion",
+    season: "2015 Spring Society Social",
+    date: "Monday, April 27, 2015",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30 PM": "Social Hour",
+      "6:30 PM": "Dinner",
+      "7:30 PM": "Program",
+    },
+    location: "F&M Bank, Franklin Room<br>50 Franklin Street, Clarksville, TN",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      "Dress Code": "Business Casual",
+      Price:
+        "$50 for Woodward Library Society members<br>(Patron, Sponsor, & Benefactor level members have tickets as a result of their membership; please call 931-221-7618)<br>$65 for non-members",
+      RSVP: "Call 931-221-7618 for dinner tickets",
+      Raffle:
+        "Raffle tickets for golf prizes donated by local golf courses will be sold at the dinner.",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "./images/events/2015SpringProgram-Image1.jpg":
+        "David Meadors book cover 'Broken eyes, unbroken spirit.'",
+      "./images/events/2015SpringProgram-Image2.jpg": "David Meador golfing",
+    },
+  },
+  /* TEMPLATE - COPY, PASTE, INCREMENT totalNumberOfEvents by one and replace _ with that value,
+   Fill in event values, or leave as empty strings and the field will not be displayed.
+
   event_: {
     title: '',
     subtitle: "",
@@ -450,7 +574,7 @@ let eventList = {
 };
 //totalNumberOfEvents should match the greatest event_ number in the eventList object.
 //this allows for quick rendering of event list instead of checking for greatest id in eventList
-const totalNumberOfEvents = 20;
+const totalNumberOfEvents = 25;
 
 //numberOfEventsThatAreCurrent controls how many events will be shown in the "current" section of event list
 //the rest of the events will be shown in the past events list
