@@ -410,10 +410,7 @@ th, td {
     flex-wrap: wrap;
 }
 
-/*Change this width if event time descriptions are running into the primary image for that event*/
-#event-time-list {
-    width: 73%;
-}
+
 
 
 #events-list ul {

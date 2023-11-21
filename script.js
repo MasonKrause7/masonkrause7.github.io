@@ -124,6 +124,7 @@ function renderEventInfo(id) {
     if (eventObj.primaryPhoto) {
     } else {
       document.getElementById("pri-photo-link").style.display = "none";
+      document.getElementById("event-attributes").style.width = "100%";
     }
   }
 

@@ -777,38 +777,43 @@ let eventList = {
     },
   },
   event35: {
-    title: "",
-    subtitle: "",
-    season: "",
-    date: "",
+    title: "Seeking Balance through Creative Expression",
+    subtitle: "featuring Dr. Beatrix Brockman",
+    season: "2018 Summer Program",
+    date: "Tuesday, August 14, 2018",
     times: {
       //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
-      "": "",
+      "5:00 PM": "",
     },
-    location: "",
+    location: "Woodward Library, Room 232",
     details: {
       //"<detailtype(not displayed)>" : "<value to be displayed>"
-      "": "",
+      Price:
+        "The program is free of charge and open to all Woodward Library Society members and guests.",
     },
-    primaryPhoto: "",
+    primaryPhoto: "/images/events/2018SummerProgram-PrimaryImage.png",
     images: {
       //"<src>" : "<alt>"
       "": "",
     },
   },
   event36: {
-    title: "",
-    subtitle: "",
-    season: "",
-    date: "",
+    title: '"A Celebration of Scholarship"',
+    subtitle:
+      "Spotlighting the scholarly and creative accomplishments of Austin Peay's faculty, staff, and students",
+    season: "2019 Winter Program",
+    date: "Tuesday, February 19, 2019",
     times: {
       //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
-      "": "",
+      "5:00 PM": "",
     },
-    location: "",
+    location: "Woodward Library, Room 232",
     details: {
       //"<detailtype(not displayed)>" : "<value to be displayed>"
-      "": "",
+      Description:
+        "Faculty members will give presentations about their recent research and publications.",
+      Price:
+        "The program is free of charge and open to all Woodward Library Society members and guests.",
     },
     primaryPhoto: "",
     images: {
@@ -817,38 +822,47 @@ let eventList = {
     },
   },
   event37: {
-    title: "",
-    subtitle: "",
-    season: "",
-    date: "",
+    title: "Dixie Dewdrop: The Uncle Dave Macon Story",
+    subtitle:
+      "featuring author Michael D. Doubler. With special guest musician John  Doubler",
+    season: "2019 Society Social",
+    date: "Saturday, April 6, 2019",
     times: {
       //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
-      "": "",
+      "5:30 PM": "",
     },
-    location: "",
+    location: "F&M Bank, Franklin Room<br>Clarksville, TN",
     details: {
       //"<detailtype(not displayed)>" : "<value to be displayed>"
-      "": "",
+      Description:
+        "One of the earliest performers on Nashville’s WSM Radio, singer and banjo player Uncle Dave Macon was the Grand Ole Opry’s first superstar. His old-time music and energetic stage presence made him a national sensation and fueled a thirty year run as one of America’s most beloved entertainers.",
+      AdditionalInfo:
+        "In addition to the program, the evening will include a social hour and dinner catered by the Party Station. There will also be a book sale and signing and an auction of gift baskets, including one containing Michael Doubler’s book, Uncle Dave Macon CDs, a DVD, Ryman tour tickets, and two tickets to the Grand Ole Opry.",
+      Price: "$50 for Library Society members; $65 for non-members.",
+      RSVP: "RSVP by March 22, 2019.",
+      Contact: "For more information contact the Library Office, 931-221-7618.",
     },
-    primaryPhoto: "",
+    primaryPhoto: "/images/events/2019SpringSocietySocial-PrimaryImage.png",
     images: {
       //"<src>" : "<alt>"
       "": "",
     },
   },
   event38: {
-    title: "",
+    title:
+      "Book Talk with Dr. Ozzie Di Paolo Harrison: <i>Femicide in Argentine Literature</i>",
     subtitle: "",
-    season: "",
-    date: "",
+    season: "2019 Fall Program",
+    date: "Monday, November 18, 2019",
     times: {
       //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
-      "": "",
+      "5:00 PM": "",
     },
-    location: "",
+    location: "Art & Desgin Building, Room 120, APSU",
     details: {
       //"<detailtype(not displayed)>" : "<value to be displayed>"
-      "": "",
+      Description:
+        "This event is open to Woodward Library Society members and guests.",
     },
     primaryPhoto: "",
     images: {
@@ -857,20 +871,119 @@ let eventList = {
     },
   },
   event39: {
-    title: "",
-    subtitle: "",
-    season: "",
-    date: "",
+    title: "Book Art Talk by Jim Diehr",
+    subtitle: "Illustrator of <i>Bacon and Me</i>",
+    season: "2020 Winter Program",
+    date: "Wednesday, February 26, 2020",
     times: {
       //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
-      "": "",
+      "5:00 PM": "",
     },
-    location: "",
+    location: "Felix G. Woodward Library<br>Conference Room 232",
     details: {
       //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Description:
+        "This event is open to Woodward Library Society members and guests.",
+    },
+    primaryPhoto: "/images/events/2020WinterProgram-PrimaryImage.png",
+    images: {
+      //"<src>" : "<alt>"
       "": "",
     },
+  },
+
+  event40: {
+    title: '"A Celebration of Scholarship"',
+    subtitle:
+      "Spotlighting the scholarly and creative accomplishments of Austin Peay's faculty, staff, and students",
+    season: "2022 Winter Program",
+    date: "Tuesday, February 15, 2022",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:00 PM": "",
+    },
+    location: "Woodward Library, Room 232",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Description:
+        "Faculty members will give presentations about their recent research and publications.",
+      ASPIRE:
+        'The bibliography can be found in <a href="https://aspire.apsu.edu/items/ac80ecca-37fb-4ab3-87b5-a1a13572098f">ASPIRE</a>.',
+      Price:
+        "The program is free of charge and open to all Woodward Library Society members and guests.",
+    },
     primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event41: {
+    title: "<i>The Diary of Serepta Jordan</i>",
+    subtitle: "featuring Minoa Uffelman, Ellen Kanervo, & Phyllis Smith",
+    season: "2022 Spring Society Social",
+    date: "Saturday, April 23, 2022",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30 PM": "Social Hour",
+      "6:30 PM": "Catered Dinner",
+      "7:30 PM": "Program",
+    },
+    location: "Austin Peay State University, Fortera Stadium, Club Level",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Description:
+        "Serepta Jordan's daily diary of life in New Providence, Tennessee from the fall of 1857 to the summer of 1864 enriches Civil War history with a unique female voice. The diary editors relay Jordan's local news reports and war updates while preserving her thoughts and feelings about the Civil War and those involved in the conflict. Jordan's diary includes details about her daily activities and social life, providing a fascinating look at life in the Clarksville area more than 150 years ago.",
+      RSVP: 'RSVP by April 15, 2022 using <a href="./images/events/2022SocietySocialReplyCard.pdf">this reply card</a>.<br>Please send your reply card to the Woodward Library Office, PO Box 4595, or call 931-221-7618.',
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "./images/events/2022SpringSocietySocial-Image1.png": "",
+    },
+  },
+  event42: {
+    title: "\"Let's Talk About It: Women's Suffrage\"",
+    subtitle:
+      "<i>Vanguard: How Black Women Broke Barriers, Won the Vote, and Insisted on Equality for All</i><br>Facilitated by Paula White and LaNeeca Williams",
+    season: "2022 Summer Program",
+    date: "Thursdsay, July 21, 2022",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:00 PM": "",
+    },
+    location: "APSU Office of Equity, Access, and Inclusion<br>416 College St.",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      "Free Admission":
+        "The program is free of charge and open to all Woodward Library Society members and guests.",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "/images/events/2022SummerProgram-PrimaryImage.jpg":
+        "Book cover of 'Vanguard' by Martha S. Jones",
+    },
+  },
+
+  event43: {
+    title: "Author Talk: <i>Just Baby Fat</i>",
+    subtitle: "featuring author Dr. Jalesa Parks",
+    season: "2022 Fall Program",
+    date: "Monday, November 7, 2022",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30 PM": "",
+    },
+    location: "Newton Military Family Resource Center<br>426 College St.",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Refreshments: "Light refreshments.",
+      Raffle: "$25 Barnes & Noble Gift Card Raffle.",
+      "Open Admission":
+        "The program is free of charge and all are welcome to attend.",
+    },
+    primaryPhoto: "./images/events/2022FallProgram-PrimaryImage.png",
     images: {
       //"<src>" : "<alt>"
       "": "",
@@ -905,7 +1018,7 @@ let eventList = {
 };
 //totalNumberOfEvents should match the greatest event_ number in the eventList object.
 //this allows for quick rendering of event list instead of checking for greatest id in eventList
-const totalNumberOfEvents = 35;
+const totalNumberOfEvents = 43;
 
 //numberOfEventsThatAreCurrent controls how many events will be shown in the "current" section of event list
 //the rest of the events will be shown in the past events list

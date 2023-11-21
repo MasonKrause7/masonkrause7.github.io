@@ -51,13 +51,15 @@
         width: 25%;
     }
 
-
+    #event-attributes {
+        width: 75%;
+    }
     #event-display .pri-photo {
         max-width: 210px;
         max-height: 230px;
         min-height: 200px;
         position: absolute;
-        top: 130px;
+        top: 145px;
         left: 73%;
         
     }
