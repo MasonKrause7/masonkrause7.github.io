@@ -61,23 +61,25 @@
     }
     
     #submenu li{
-        border-bottom: 1px solid var(--black);
+        
         border-radius: 5px;
-        padding: 1.5vh 2vw;
+        padding: 10px 15px;
         margin: 0px;
         width: 100%;
         text-align: left;
+        font-size: 12pt;
         transition: var(--t-time);
     }
-    #submenu li a {
-        padding: 1vh 2vw;
-        font-size: 1.1em;
-        transition: var(--t-time);
+    #submenu a {
+        padding: 0px;
+        border-bottom: 1px solid var(--black);
+        width: 100%;
+        transition: var(--t-time)
     }
-    #submenu li:hover {
+    #submenu a:hover {
         background-color: var(--black);
     }
-    #submenu li:hover a{
+    #submenu a:hover li{
         background-color: var(--black);
         color: var(--white);
     }

@@ -5,34 +5,35 @@
     --white: rgb(255, 255, 255);
     --black: rgb(0, 0, 0);
     --t-time: .5s;
+    --nav-load-time: 300ms;
 }
 @font-face {
     font-family: gothamBlack;
-    src: url("/styles/fonts/Gotham-Black.otf");
+    src: url("/styles/fonts/metropolis.black.otf");
 }
 @font-face {
     font-family: gothamBold;
-    src: url("/styles/fonts/Gotham-Bold.otf");
+    src: url("/styles/fonts/metropolis.bold.otf");
 }
 @font-face{
     font-family: gothamLight;
-    src: url("/styles/fonts/Gotham-Light.otf");
+    src: url("/styles/fonts/metropolis.light.otf");
 }
 @font-face {
     font-family: gothamThinItalic;
-    src: url("/styles/fonts/Gotham-ThinItalic.otf");
+    src: url("/styles/fonts/metropolis.light-italic.otf");
 }
 @font-face {
     font-family: gothamBook;
-    src: url("/styles/fonts/GothamBook.ttf");
+    src: url("/styles/fonts/metropolis.regular.otf");
 }
 @font-face {
     font-family: gothamBookItalic;
-    src: url("/styles/fonts/Gotham-BookItalic.otf");
+    src: url("/styles/fonts/metropolis.regular-italic.otf");
 }
 @font-face {
     font-family: gothamMedium;
-    src: url("/styles/fonts/GothamMedium.ttf");
+    src: url("/styles/fonts/metropolis.medium.otf");
 }
 
 /* Generic Styling */
@@ -52,7 +53,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+
 .logo img{
     width: 360px;
     height: 150px;
@@ -69,7 +72,9 @@ nav {
     position: sticky;
     z-index: 5;
     border-bottom: 1px solid var(--gray-d);
+    
 }
+
 nav ul {
     padding-left: 0px;
     margin: 0px;
@@ -80,7 +85,7 @@ nav ul {
 }
 .page-title {
     font-family: gothamBold;
-    padding: 3vh 1vw;
+    padding: 2vh 1vw;
     margin: 0px;
     border-top: 4px solid var(--red);
     text-align: center;
@@ -114,13 +119,26 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .hero-fg {
     display: flex;
     justify-content: center;
     margin: 0px;
     width: 100%;
     min-height: 60vh;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, 1));
+    background-image: linear-gradient(180deg, rgba(99,
+        100,
+        102, .2), rgba(0, 0, 0, .9));
+    animation: hero-load 2.5s;
+}
+@keyframes hero-load {
+    0% {
+        background-color: var(--gray-l);
+    }
+
+    100% {
+        background-color: transparent;
+    }
 }
 .hero-content {
     display: flex;
@@ -131,6 +149,7 @@ a {
     width: 90%;
     align-items: center;
     padding: 3vh 0px;
+    animation: hero-content-load 3s;
 }
 .hero-content h3 {
     margin: 0px;
@@ -138,13 +157,14 @@ a {
     font-size: 3rem;
     font-family: gothamBold;
     font-weight: bold;
+    animation: hero-content-load 3s;
 }
 .hero-content p{
     font-size:1.5rem;
     font-family: gothamBook;
     padding: 3vh;
     margin-top: 0px;
-    
+    animation: hero-content-load 3s;
 }
 .hero-btns {
     margin-top: 4vh;
@@ -161,6 +181,15 @@ a {
     margin: .5vh .5vw;
     text-decoration: none;
     transition: var(--t-time);
+    animation: hero-content-load 2.5s;
+}
+@keyframes hero-content-load {
+    0% {
+        color: var(--gray-d);
+    }
+    100%{
+        color: white;
+    }
 }
 .hero-btn:hover {
     background-color: var(--white);
@@ -320,13 +349,13 @@ th, td {
 }
 .articles-of-bylaws ul li{
     margin-bottom: 4px;
-    font-size: 2.4ex;
+    font-size: 13pt;
     max-width: 65%;
 }
 .article {
     padding: 2px 2vw; 
     font-family: gothamLight;
-    font-size: 2.8ex;
+    font-size: 13pt;
 }
 .article ol {
     padding: 2px 6vw;
@@ -348,14 +377,14 @@ th, td {
     top: 0px;
     left: 100%;
     transform: translate(-100%, 0);
-    font-size: 1.1em;
+    font-size: 12pt;
     opacity: .7;
 }
 .amendment-notes {
     max-width: 60%;
     font-family: gothamBook;
     padding: 0px 0vw 0px 3vw;
-    font-size: 17px;
+    font-size: 12pt;
 }
 #constitution > div:last-of-type{
     border-bottom: 2px dotted black;
