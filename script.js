@@ -120,6 +120,13 @@ function renderEventInfo(id) {
     const detailsHeaders = document.getElementById("details-header");
     detailsHeaders.style.display = "none";
   }
+  if (Object.keys(eventObj.primaryPhoto)) {
+    if (eventObj.primaryPhoto) {
+    } else {
+      document.getElementById("pri-photo-link").style.display = "none";
+    }
+  }
+
   if (Object.keys(eventObj.images)[0]) {
     let eventImages = document.getElementById("event-images");
     for (let i = 0; i < Object.keys(eventObj.images).length; i++) {
@@ -127,8 +134,8 @@ function renderEventInfo(id) {
       eventImages.insertAdjacentHTML(
         "beforeend",
         `
-        <a href="${key}">
-        <img src="${key}" alt="${eventObj.images[key]}">
+        <a class="eventImageLink" href="${key}">
+        <img class="eventImage" src="${key}" alt="${eventObj.images[key]}">
         </a>
         `
       );

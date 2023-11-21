@@ -128,16 +128,19 @@
         
     }
     #event-display .pri-photo {
-        max-width: 200px;
-        max-height: 250px;
+        max-width: 300px;
+        max-height: 450px;
         margin-top: 10%;
         
     }
     #event-display img {
+        flex-grow: 1;
         max-height:450px;
         max-width: 300px;
         margin: 2px 2px;
+        
     }
+    
     
     
     

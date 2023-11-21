@@ -1,7 +1,8 @@
 /*The eventList has properties for each event that the society has had. Each of these has its own properties that are the event details. */
 /*To add an event, simply copy the template at the end of the eventList, increment the event_ to the proper ID, fill in the event data, 
-and then increment the totalNumberOfEvents variable declared directly below the eventList */
+and then increment the totalNumberOfEvents variable by 1 to match the event_ */
 /* The totalNumberOfEvents variable should be the equal to the last event_ number in the eventList. */
+/*If the new event does not have a certain property that is in the template, still include the property declaration but leave its fields blank. e.g event1: { details: {} }*/
 let eventList = {
   event1: {
     title: "Dinner on the River: An Evening with Michael Shoulders",
@@ -90,6 +91,7 @@ let eventList = {
       price: "Complimentary to members, $20 for non-members.",
       RSVP: "Reservation required, limited seating. Call 931-221-7618 to reserve your seat.",
     },
+    images: {},
   },
 
   event6: {
@@ -109,6 +111,7 @@ let eventList = {
       receptionNotes:
         "Hosted by President Tim & Mrs. Lee Nicholson Hall<br>5:00-6:30 PM, Thursday, November 11, 2010<br>APSU Pace Alumni Center at Emerald Hills",
     },
+    images: {},
   },
 
   event7: {
@@ -280,7 +283,7 @@ let eventList = {
       "3:00 PM": "",
     },
     location: "APSU Honors Commons (Memorial Health Building)",
-
+    details: {},
     primaryPhoto: "",
     images: {
       //"<src>" : "<alt>"
@@ -323,6 +326,7 @@ let eventList = {
       "7:00 PM": "",
     },
     location: "Felix G. Woodward Library",
+    details: {},
     primaryPhoto: "",
     images: {
       //"<src>" : "<alt>"
@@ -471,10 +475,9 @@ let eventList = {
     },
   },
   event23: {
-    title:
-      "<i>The Diary of Nannie Haskins Williams: A Southern Woman's Story of Rebellion and Reconstruction, 1863-1890</i>",
+    title: "<i>The Diary of Nannie Haskins Williams</i>",
     subtitle:
-      "with co-editors Minoa Uffelman, Ellen Kanervo, Phyllis Smith, & Eleanor Williams",
+      "A Southern Woman's Story of Rebellion and Reconstruction, 1863-1890. With co-editors Minoa Uffelman, Ellen Kanervo, Phyllis Smith, & Eleanor Williams",
     season: "2014 Fall Program",
     date: "November 3, 2014",
     times: {
@@ -545,6 +548,334 @@ let eventList = {
       "./images/events/2015SpringProgram-Image2.jpg": "David Meador golfing",
     },
   },
+
+  event26: {
+    title: "<i>Divided: Mary Lincoln & Emilie Todd Helm</i>",
+    subtitle:
+      "A dramatic reading featuring the author, Valerie Gugala, as Mary Todd Lincoln, and Ms. Gugala's half-sister, Sara Resler, as Mrs. Lincoln's half-sister, Emilie Todd Helm",
+    season: "2015 Fall Program",
+    date: "Saturday, September 12, 2015",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "7:00 PM": "",
+    },
+    location: "Trahern Theatre, APSU",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Description:
+        "This program is in conjunction with the traveling exhibition titled “Lincoln: The Constitution and the Civil War,” to be hosted by Woodward Library Sept. 8–Oct. 15. The exhibition is in honor of the sesquicentennial of the Civil War and is sponsored by the National Endowment for the Humanities, the American Library Association, and the National Constitution Center.",
+      Price: "The exhibition is free and open to the public",
+    },
+    primaryPhoto: "./images/events/2015FallProgram-PrimaryImage.png",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event27: {
+    title: "Lost on a Mountain in Maine",
+    subtitle:
+      "featuring Donn fendler, author of this true story, soon to be released as a motion picture.",
+    season: "2016 Winter Program",
+    date: "Thursday, January 28, 2016",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30 PM": "Social Gathering: hors d'oeuvres & beverages.",
+      "6:15 PM": "Presentation and Q&A.",
+    },
+    location: "APSU Football Stadium, Club Level",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      RSVP: "No RSVP necessary. We look forward to seeing you there!",
+    },
+    primaryPhoto: "./images/events/2016WinterProgram-PrimaryImage.jpg",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+
+  event28: {
+    title: "Feeding a World of Nine Billion",
+    subtitle: "Dr. Amy Wright & Dr. Donald Sudbrink",
+    season: "2016 Spring Social",
+    date: "Saturday, April 30, 2016",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30 PM": "Social Hour",
+      "6:30 PM": "Dinner",
+      "7:30 PM": "Program",
+    },
+    location: "F&M Bank, Franklin Room<br>50 Franklin St., Clarksville, TN",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Price:
+        "$50 for Woodward Library Society members.<br>(Patron, Sponsor, and Benefactor level members have tickets as a result of their membership; please call 931-221-7618 for confirmation).<br> $65 for non members.",
+      RSVP: "Call 931-221-7618 for tickets.",
+      DressCode: "Business Casual",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event29: {
+    title: "<i>Sharkespeare and the First Folio</i>",
+    subtitle: "by Dr. Mickey Wadia",
+    season: "2016 Fall Program",
+    date: "Wednesday, November 9, 2016",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30 PM": "Light Refreshments",
+      "6:00 PM": "Sharkespeare and the First Folio",
+      "7:00 PM": "Roxy Regional Theatre's Production of <i>Henry V</i>",
+    },
+    location: "Roxy Regional Theatre<br>100 Franklin St., Clarksville, TN",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Price:
+        "Reception and program are free. If you wish to stay for <i>Henry V</i>, discounted tickets are available for $15 per person. Purchase tickets through the box office by calling 931-645-7699 or in person. Let them know you are with the Woodward Library Society.",
+      RSVP: "RSVP to Teresa Beyke at 931-7618 by Friday, November 4, 2016",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event30: {
+    title: '"A Celebration of Scholarship"',
+    subtitle:
+      "Spotlighting the scholarly and creative accomplishments of Austin Peay's faculty, staff, and students",
+    season: "2017 Winter Program",
+    date: "Tuesday, February 28, 2017",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:00 PM": "Light Refreshments",
+      "5:30 PM":
+        "Featured Presentation: <i>...But if a Zombie Apocalypse Did Occur</i>",
+    },
+    location: "Woodward Library, Room 232, APSU",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Description:
+        "The featured presentation will be from the authors and editors of <i>...But if a Zombie Apocalypse Did Occur: Essays on Medical, Military, Governmental, Ethical, Economic, and Other Implications</i>, a book writeen and edited by APSU faculty that is part of this year's Celebration of Scholarship.",
+    },
+    primaryPhoto: "/images/events/2017WinterProgram-PrimaryImage.jpg",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event31: {
+    title: '<i>"Fake News, Alternative Facts: Jornalism\'s New Age"</i>',
+    subtitle: "featuring Pulitzer Prize winning reporter Jackie Crosby",
+    season: "2017 Spring Social",
+    date: "Saturday, April 1, 2017",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30 PM": "Social Hour",
+      "6:30 PM": "Dinner catered by the Party Station",
+      "7:30 PM":
+        '"Program featuring Jackie Crosby, Pulitzer Prize winning reporter: <i>"Fake News, Alternative Facts: Journalism\'s New Age"</i>',
+    },
+    location: "F&M Bank, Franklin Room<br>50 Franklin St., Clarksville, TN",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      DressCode: "Business Casual",
+      RSVP: "RSVP by March 22, call 931-221-7618 for tickets.",
+      Price:
+        "$50 for Woodward Library Society members, $65 for nonmbers.<br>(Patron, Sponsor, & Benefactor level members have tickets as a result of their membership; please call 931-221-7618 for confirmation.",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event32: {
+    title:
+      '<i>"The Story of Dorothy Dix: From Local Roots to Global Celebrity"</i>',
+    subtitle: "",
+    season: "2017 Summer Program",
+    date: "Saturday, June 24, 2017",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "<strong>10:30 AM</strong>":
+        "<strong>Exhibity of Dorothy Dix Archival Materials</strong><br>Felix G. Woodward Library, room 232",
+      "<strong>11:30 AM</strong>":
+        "<strong>Lunch: Classic Sandwich Buffet</strong><br>$12.95 per person; please RSVP to 931-221-7618 by June 19.<br>416 College St. (former Jenkins & Wynne truck showroom)",
+      "<strong>12:30 PM</strong>":
+        "<strong>Dorothy Dix Presentation and Documentary Video</strong><br>Presented by Eloise Weatherspoon, Ellen Kanervo, Taylor Emery, Kathy Lee Heuston, and Inga Filippo<br>416 College St. (former Jenkins & Wynne truck showroom)",
+    },
+    location: "",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      RSVP: "RSVPs are necessary only for the luncheon.",
+      Price:
+        "The exhibit and presentation are free of charge and open to all Woodward Library Society members and guests.",
+    },
+    primaryPhoto: "/images/events/2017SummerProgram-PrimaryImage.png",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event33: {
+    title: "Readings from Their Latest Books",
+    subtitle: "featuring Andrea Spofford, Amy Wright, & Stephanie Dugger",
+    season: "2018 Winter Program",
+    date: "Wednesday, January 31, 2018",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:00 PM": "Social Time & Refreshments",
+      "5:30 PM": "Readings",
+    },
+    location: "APSU Trahern Building, Laboratory Theatre",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Price:
+        "The program is free of charge and open to all Woodward Library Society members and guests.",
+      RSVP: "No RSVP necessary. We look forward to seeing you there!",
+    },
+    primaryPhoto: "/images/events/2018WinterProgram-Image2.png",
+    images: {
+      //"<src>" : "<alt>"
+      "/images/events/2018WinterProgram-Image1.jpg":
+        "Book cover of 'Either Way, You're Done, by Stephanie McCarley Dugger'",
+      "/images/events/2018WinterProgram-Image3.jpg":
+        "Book cover of 'Everything in the Universe' by Amy Wright",
+    },
+  },
+
+  event34: {
+    title: "<i>My Father's War: A Story of Conflict, Survival, and Grace</i>",
+    subtitle: "featuring Carol Ponder & Robert Kiefer",
+    season: "2018 Society Social",
+    date: "Saturday, April 21, 2018",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30 PM": "Social Hour",
+      "6:30 PM": "Buffet Dinner",
+      "7:30 PM": "Program",
+    },
+    location: "F&M Bank, Franklin Room<br>50 Franklin St., Clarksville, TN",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Price: "$50 for Library Society members; $65 for non-members.",
+      RSVP: "RSVP by April 16, 2018",
+      MoreInfo:
+        "For more information contact the Library Office, 931-221-7618.",
+      Description:
+        "<i>My Father's War</i> is based on the WWII memoir Ponder Anew by Lt. Herschel Ponder. When he arrives home after three years at war, Lt. Ponder must reintegrate into civilian life while struggling with PTSD and other unseen wounds. In addition to recreating her father’s memoirs, Carol Ponder and Robert Kiefer perform songs from the period and from Lt. Ponder’s beloved Appalachian mountains to create a beautiful setting for his story.",
+    },
+    primaryPhoto: "/images/events/2018SpringSocietySocial-PrimaryImage.png",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event35: {
+    title: "",
+    subtitle: "",
+    season: "",
+    date: "",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "": "",
+    },
+    location: "",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      "": "",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event36: {
+    title: "",
+    subtitle: "",
+    season: "",
+    date: "",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "": "",
+    },
+    location: "",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      "": "",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event37: {
+    title: "",
+    subtitle: "",
+    season: "",
+    date: "",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "": "",
+    },
+    location: "",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      "": "",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event38: {
+    title: "",
+    subtitle: "",
+    season: "",
+    date: "",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "": "",
+    },
+    location: "",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      "": "",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+  event39: {
+    title: "",
+    subtitle: "",
+    season: "",
+    date: "",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "": "",
+    },
+    location: "",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      "": "",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
   /* TEMPLATE - COPY, PASTE, INCREMENT totalNumberOfEvents by one and replace _ with that value,
    Fill in event values, or leave as empty strings and the field will not be displayed.
 
@@ -574,7 +905,7 @@ let eventList = {
 };
 //totalNumberOfEvents should match the greatest event_ number in the eventList object.
 //this allows for quick rendering of event list instead of checking for greatest id in eventList
-const totalNumberOfEvents = 25;
+const totalNumberOfEvents = 35;
 
 //numberOfEventsThatAreCurrent controls how many events will be shown in the "current" section of event list
 //the rest of the events will be shown in the past events list

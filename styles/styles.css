@@ -406,8 +406,13 @@ th, td {
 }
 #event-images {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+/*Change this width if event time descriptions are running into the primary image for that event*/
+#event-time-list {
+    width: 73%;
 }
 
 
@@ -450,6 +455,7 @@ th, td {
         width: 95vw;
         border: none;
     }
+   
     
 }
 #event-details p {
