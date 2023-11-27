@@ -323,7 +323,7 @@ function setNewsletterSeason() {
   const urlArgs = new URLSearchParams(window.location.search);
   const season = urlArgs.get("season");
   if (season) {
-    const frame = document.getElementById("pdf-iframe");
+    const frame = document.getElementById("newsletter-iframe");
     console.log(`./images/newsletters/WLSNewsletter-${season}.pdf`);
     frame.setAttribute(
       "src",
