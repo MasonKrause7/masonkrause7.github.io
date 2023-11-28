@@ -1,3 +1,13 @@
+/*
+This file serves as the database of events and galleries to allow dynamic rendering and updating.
+Two lists are exported from this file to script.js, they are: eventList and galleryList.
+Each of these lists has properties for each instance of event and gallery that have occured. 
+Each instance has its own properties. 
+There are templates at the end of each list that model the properties an instance can have. Some helpful notes : 
+  Simply copy and paste the template, uncomment, increment the _ to represent the instance id, increment the totalNumberOf variable for the list, add instance data.
+  Images added to galleries and events should be added as a relative url to an image file saved in the project directory.
+*/
+
 /*The eventList has properties for each event that the society has had. Each of these has its own properties that are the event details. */
 /*To add an event, simply copy the template at the end of the eventList, increment the event_ to the proper ID, fill in the event data, 
 and then increment the totalNumberOfEvents variable by 1 to match the event_ */
@@ -989,36 +999,86 @@ let eventList = {
       "": "",
     },
   },
+
+  event44: {
+    title: "Meet Dr. Sharon Mabry",
+    subtitle: "author of <i>The Postmaster's Daughter<i>",
+    season: "2023 Winter Program",
+    date: "Tuesday, February 21, 2023",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:30 PM": "",
+    },
+    location: "Art + Design Building, Heydel Hall",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      Refreshments:
+        "Light refreshments will be provided. $25 Barnes & Noble Gift Card Door Prize",
+      Notes:
+        "A book signing will follow the presentation. Copies of the book will be available to purchase for $20.",
+      "Open Addmission":
+        "The program is free of charge and all are welcome to attend.",
+    },
+    primaryPhoto: "/images/events/2023WinterProgram-PrimaryImage.jpg",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
+
+  event45: {
+    title:
+      "Presentation and Musical Performance <i>featuring</i> Dr. David Goldblatt",
+    subtitle: "on the works of Julius Chajes",
+    season: "2023 Fall Program",
+    date: "Tuesday, October 17, 2023",
+    times: {
+      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      "5:00 PM": "Reception",
+      "5:30 PM": "Presentation and Performance",
+    },
+    location: "Trahern Auditorium",
+    details: {
+      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      "Open Admission":
+        "The program is free of charge and all are welcome to attend.",
+      RSVP: "Please RSVP by Friday, October 13 by calling 931-221-7618.",
+    },
+    primaryPhoto: "",
+    images: {
+      //"<src>" : "<alt>"
+      "": "",
+    },
+  },
   /* TEMPLATE - COPY, PASTE, INCREMENT totalNumberOfEvents by one and replace _ with that value,
    Fill in event values, or leave as empty strings and the field will not be displayed.
 
   event_: {
-    title: '',
-    subtitle: "",
-    season: "",
-    date: "",
+    title: '', //use <strong></strong> to bolden words
+    subtitle: "", //use <i></i> for italics 
+    season: "", //i.e. 2023 Fall Program
+    date: "", //i.e. Tuesday, October 17, 2023
     times: {
-      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
+      //"<time> i.e. 7:00 PM" : "<description>(OPTIONAL) i.e. Refreshments, Program Commencement, Social Hour"
       "": "",
       
     },
     location: "",
     details: {
-      //"<detailtype(not displayed)>" : "<value to be displayed>"
+      //"<type of detail>(OPTIONAL-used for readability) i.e. RSVP deadline" : "<value to be displayed> i.e. Please RSVP by 1/1/2000 to ###-###-####"
       "" : "",
 
     },
-    primaryPhoto: "",
+    primaryPhoto: "", //<url>
     images: {
-      //"<src>" : "<alt>"
+      //"<src> i.e. /images/events/2023WinterProgram-PrimaryImage" : "<alt> i.e. Purple front cover of the book 'The Postmasters Daughter' by Sharon Mabry. "
       "" : "",
       
     }
   },*/
 };
 //totalNumberOfEvents should match the greatest event_ number in the eventList object.
-//this allows for quick rendering of event list instead of checking for greatest id in eventList
-const totalNumberOfEvents = 43;
+const totalNumberOfEvents = 45;
 
 //numberOfEventsThatAreCurrent controls how many events will be shown in the "current" section of event list
 //the rest of the events will be shown in the past events list
@@ -1170,7 +1230,15 @@ let galleryList = {
         "Society members hugging",
     },
   },
-  //gallery3: {},
+  /* TEMPLATE - REUSE AND INCREMENT THE totalNumberOfGalleries variable. totalNumberOfGalleries should = this most recently added galleries id that replaces _ in gallery_
+  gallery_: {
+    title: "",
+    subtitle: "",
+    images: {
+      //"<url> i.e. images/galleries/dinnerontheriver/WS001.jpg" : "<alt attribute> i.e. Water Street Event Center street sign the day of the event."
+      "" : "",
+    },
+  },*/
 };
 let totalNumberOfGalleries = 3;
 //getters for galleries

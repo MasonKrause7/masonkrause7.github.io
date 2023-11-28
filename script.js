@@ -28,6 +28,9 @@ window.onload = () => {
     renderMostRecentGallery();
   } else if (window.location.href.includes("newsletter.html?")) {
     setNewsletterSeason();
+  } else if (window.location.href.includes("newsletter.html")) {
+    let currentSeason = "Fall2022";
+    window.location.href = `newsletter.html?season=${currentSeason}`;
   }
 };
 
