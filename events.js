@@ -5,7 +5,8 @@ Each of these lists has properties for each instance of event and gallery that h
 Each instance has its own properties. 
 There are templates at the end of each list that model the properties an instance can have. Some helpful notes : 
   Simply copy and paste the template, uncomment, increment the _ to represent the instance id, increment the totalNumberOf variable for the list, add instance data.
-  Images added to galleries and events should be added as a relative url to an image file saved in the project directory.
+  If you do not wish to include a property from the template for your instance, leave it as an empty string,
+     Do Not delete the property altogether or it will not render properly.
 */
 
 /*The eventList has properties for each event that the society has had. Each of these has its own properties that are the event details. */
@@ -30,6 +31,7 @@ let eventList = {
       moreInfo: `For more information, please contact the Library Director's office at 931-221-7618.
           Pictures from this event can be found in the <a href="gallery.html">Gallery</a>.`,
     },
+    primaryPhoto: "",
     images: {
       //image-url : alt
     },
@@ -48,6 +50,7 @@ let eventList = {
         A reception with hors d'oeuvres and beverages will precede the program, along with a ceremony to celebrate the Society's first donation to the Woodward Library.
         This event is sponsored by the Woodward Library Society of Austin Peay State University and F&M Bank, and is free of charge for all Woodward Library Society members and prospective members.`,
     },
+    primaryPhoto: "",
     images: {},
   },
 
@@ -64,6 +67,7 @@ let eventList = {
       RSVP: `Please RSVP by March 18, 2010 to 931-221-7222.`,
       note: `This event is for members only. Please see the memberships page for a description of members benefits.`,
     },
+    primaryPhoto: "",
     images: {},
   },
 
@@ -83,6 +87,7 @@ let eventList = {
         "$30 per person for members of the Woodward Library Society.<br>$40 per person for non-members.",
       RSVP: "Attendance is limited, please RSVP to 931-221-7222 before Wednesday, April 14, 2010.",
     },
+    primaryPhoto: "",
     images: {},
   },
 
@@ -101,6 +106,7 @@ let eventList = {
       price: "Complimentary to members, $20 for non-members.",
       RSVP: "Reservation required, limited seating. Call 931-221-7618 to reserve your seat.",
     },
+    primaryPhoto: "",
     images: {},
   },
 
@@ -121,6 +127,7 @@ let eventList = {
       receptionNotes:
         "Hosted by President Tim & Mrs. Lee Nicholson Hall<br>5:00-6:30 PM, Thursday, November 11, 2010<br>APSU Pace Alumni Center at Emerald Hills",
     },
+    primaryPhoto: "",
     images: {},
   },
 
@@ -238,7 +245,6 @@ let eventList = {
     season: "2012 Spring Society Social",
     date: "Tuesday, March 20, 2012",
     times: {
-      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
       "5:30-8:30 PM": "",
       "5:30 PM": "Social Hour",
       "6:30 PM": "Dinner",
@@ -246,14 +252,12 @@ let eventList = {
     },
     location: "F&M Bank, Franklin Room<br>50 Franklin St., Clarksville",
     details: {
-      //"<detailtype(not displayed)>" : "<value to be displayed>"
       Price:
         "$45 each for Society members; $55 for non-members<br>Call 931-221-7618 to purchase tickets",
       RSVP: "RSVP by March 15 to 931-221-7618",
     },
     primaryPhoto: "",
     images: {
-      //"<src>" : "<alt>"
       "": "",
     },
   },
@@ -263,7 +267,6 @@ let eventList = {
     season: "2012 Summer Program",
     date: "Tuesday, August 14, 2012",
     times: {
-      //"<time (e.g. 7:00 PM)>" : "<description(eg meet and greet with snacks)>"
       "5:30-8:30 PM": "",
       "5:30": "Reception",
       "6:45": "Dinner and Reading",
@@ -1039,42 +1042,59 @@ let eventList = {
     },
     location: "Trahern Auditorium",
     details: {
-      //"<detailtype(not displayed)>" : "<value to be displayed>"
       "Open Admission":
         "The program is free of charge and all are welcome to attend.",
       RSVP: "Please RSVP by Friday, October 13 by calling 931-221-7618.",
     },
     primaryPhoto: "",
     images: {
-      //"<src>" : "<alt>"
       "": "",
     },
   },
-  /* TEMPLATE - COPY, PASTE, INCREMENT totalNumberOfEvents by one and replace _ with that value,
-   Fill in event values, or leave as empty strings and the field will not be displayed.
 
-  event_: {
-    title: '', //use <strong></strong> to bolden words
-    subtitle: "", //use <i></i> for italics 
-    season: "", //i.e. 2023 Fall Program
-    date: "", //i.e. Tuesday, October 17, 2023
+  event46: {
+    title: "", //for quotes or apostrophes in a string use the escape character forward slash before it i.e. 'Postmaster\'s Daughter'
+    subtitle: "", //for italics use <i></i> i.e. "author of <i>The Grinch</i>."
+    season: "", //i.e. "2023 Fall Program"
+    date: "", //i.e. "Tuesday, October 17, 2023"
     times: {
-      //"<time> i.e. 7:00 PM" : "<description>(OPTIONAL) i.e. Refreshments, Program Commencement, Social Hour"
+      //<time> i.e. "7:00 PM" : <description>(OPTIONAL) i.e. "Refreshments", "Program Commencement", "Social Hour"
       "": "",
-      
     },
     location: "",
     details: {
       //"<type of detail>(OPTIONAL-used for readability) i.e. RSVP deadline" : "<value to be displayed> i.e. Please RSVP by 1/1/2000 to ###-###-####"
-      "" : "",
-
+      "": "",
     },
-    primaryPhoto: "", //<url>
+    primaryPhoto: "", //"<url>"
     images: {
       //"<src> i.e. /images/events/2023WinterProgram-PrimaryImage" : "<alt> i.e. Purple front cover of the book 'The Postmasters Daughter' by Sharon Mabry. "
-      "" : "",
-      
-    }
+      "": "",
+    },
+  },
+  /* 
+  //TEMPLATE - REUSE and INCREMENT the _, AND INCREMENT the totalNumberOfEvents variable located below.
+  //Do Not remove any properties. If you do not have data to include for a property, leave it as an empty string
+
+  event_: {
+   title: "", //for quotes or apostrophes in a string use the escape character forward slash before it i.e. 'Postmaster\'s Daughter'
+    subtitle: "", //for italics use <i></i> i.e. "author of <i>The Grinch</i>."
+    season: "", //i.e. "2023 Fall Program"
+    date: "", //i.e. "Tuesday, October 17, 2023"
+    times: {
+      //<time> i.e. "7:00 PM" : <description>(OPTIONAL) i.e. "Refreshments", "Program Commencement", "Social Hour"
+      "": "",
+    },
+    location: "",
+    details: {
+      //"<type of detail>(OPTIONAL-used for readability) i.e. RSVP deadline" : "<value to be displayed> i.e. Please RSVP by 1/1/2000 to ###-###-####"
+      "": "",
+    },
+    primaryPhoto: "", //"<url>"
+    images: {
+      //"<src> i.e. /images/events/2023WinterProgram-PrimaryImage" : "<alt> i.e. Purple front cover of the book 'The Postmasters Daughter' by Sharon Mabry. "
+      "": "",
+    },
   },*/
 };
 //totalNumberOfEvents should match the greatest event_ number in the eventList object.
