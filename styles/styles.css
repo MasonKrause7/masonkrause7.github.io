@@ -5,7 +5,7 @@
     --white: rgb(255, 255, 255);
     --black: rgb(0, 0, 0);
     --t-time: .5s;
-    --nav-load-time: 300ms;
+    --animation-time: 1.5s;
 }
 @font-face {
     font-family: gothamBlack;
@@ -114,7 +114,7 @@ a {
     width: 100%;
     padding: 0px;
     margin: 0px;
-    background-image: url("/images/libraryfront1.jpg");
+    background-image: url("/images/libraryfront1-edit.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -129,7 +129,7 @@ a {
     background-image: linear-gradient(180deg, rgba(99,
         100,
         102, .2), rgba(0, 0, 0, .9));
-    animation: hero-load 2.5s;
+    animation: hero-load var(--animation-time);
 }
 @keyframes hero-load {
     0% {
@@ -149,7 +149,7 @@ a {
     width: 90%;
     align-items: center;
     padding: 3vh 0px;
-    animation: hero-content-load 3s;
+    animation: hero-content-load var(--animation-time);
 }
 .hero-content h3 {
     margin: 0px;
@@ -157,14 +157,14 @@ a {
     font-size: 3rem;
     font-family: gothamBold;
     font-weight: bold;
-    animation: hero-content-load 3s;
+    animation: hero-content-load var(--animation-time);
 }
 .hero-content p{
     font-size:1.5rem;
     font-family: gothamBook;
     padding: 3vh;
     margin-top: 0px;
-    animation: hero-content-load 3s;
+    animation: hero-content-load var(--animation-time);
 }
 .hero-btns {
     margin-top: 4vh;
@@ -181,7 +181,7 @@ a {
     margin: .5vh .5vw;
     text-decoration: none;
     transition: var(--t-time);
-    animation: hero-content-load 2.5s;
+    animation: hero-content-load var(--animation-time);
 }
 @keyframes hero-content-load {
     0% {

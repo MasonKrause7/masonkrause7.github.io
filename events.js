@@ -1051,31 +1051,9 @@ let eventList = {
       "": "",
     },
   },
-
-  event46: {
-    title: "", //for quotes or apostrophes in a string use the escape character forward slash before it i.e. 'Postmaster\'s Daughter'
-    subtitle: "", //for italics use <i></i> i.e. "author of <i>The Grinch</i>."
-    season: "", //i.e. "2023 Fall Program"
-    date: "", //i.e. "Tuesday, October 17, 2023"
-    times: {
-      //<time> i.e. "7:00 PM" : <description>(OPTIONAL) i.e. "Refreshments", "Program Commencement", "Social Hour"
-      "": "",
-    },
-    location: "",
-    details: {
-      //"<type of detail>(OPTIONAL-used for readability) i.e. RSVP deadline" : "<value to be displayed> i.e. Please RSVP by 1/1/2000 to ###-###-####"
-      "": "",
-    },
-    primaryPhoto: "", //"<url>"
-    images: {
-      //"<src> i.e. /images/events/2023WinterProgram-PrimaryImage" : "<alt> i.e. Purple front cover of the book 'The Postmasters Daughter' by Sharon Mabry. "
-      "": "",
-    },
-  },
-  /* 
+  /*
   //TEMPLATE - REUSE and INCREMENT the _, AND INCREMENT the totalNumberOfEvents variable located below.
   //Do Not remove any properties. If you do not have data to include for a property, leave it as an empty string
-
   event_: {
    title: "", //for quotes or apostrophes in a string use the escape character forward slash before it i.e. 'Postmaster\'s Daughter'
     subtitle: "", //for italics use <i></i> i.e. "author of <i>The Grinch</i>."
@@ -1184,31 +1162,31 @@ let galleryList = {
       "Woodward Library Society Fall 2012 Program:<br>The Politics of Memory: Archives, Historic Preservation, and Lessons of the Past",
     subtitle: "by Dr. Susan Curtis, Purdue University<br>October 18, 2012",
     images: {
-      "images/galleries/politicsofmemory/PoliticsOfMemory1.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory2.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory6.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory7.jpg": "",
-
-      "images/galleries/politicsofmemory/PoliticsOfMemory4.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory5.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory8.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory9.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory10.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory11.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory12.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory13.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory14.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory15.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory16.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory17.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory18.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory19.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory20.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory21.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory22.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory23.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory24.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory25.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory1.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory2.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory6.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory7.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory3.png": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory4.png": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory5.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory8.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory9.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory10.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory11.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory12.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory13.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory14.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory15.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory16.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory17.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory18.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory19.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory20.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory21.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory22.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory23.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory24.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory25.jpg": "",
     },
   },
   gallery3: {
