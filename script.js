@@ -91,7 +91,7 @@ function renderEventInfo(id) {
         `<li><p>${Object.keys(eventObj.times)[i]} ${
           eventObj.times[Object.keys(eventObj.times)[i]] == ""
             ? ""
-            : `&#x1F80A ${eventObj.times[Object.keys(eventObj.times)[i]]}`
+            : `-> ${eventObj.times[Object.keys(eventObj.times)[i]]}`
         }</p></li>`
       );
     eventTimeList.style.display = "block";
