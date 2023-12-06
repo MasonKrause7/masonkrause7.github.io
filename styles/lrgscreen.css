@@ -71,6 +71,12 @@
         padding-right: 2px;
     }
     
+    .board-version {
+        width: 50vw;
+    }
+    #board-archive-year-links, #archive-year-links-list {
+        width: 50vw;
+    }
     
      
     

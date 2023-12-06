@@ -1105,56 +1105,38 @@ let galleryList = {
       "/images/galleries/dinnerontheriver/WS001.jpg":
         "Water Street Event Center front entrance sign",
       "/images/galleries/dinnerontheriver/WS005.jpg": "Entry table",
-      "/images/galleries/dinnerontheriver/WS013.jpg":
-        "Wine bottle on entry table",
-      "/images/galleries/dinnerontheriver/WS015.jpg":
-        "Woodward Library Society program with dining set",
-      "/images/galleries/dinnerontheriver/WS016.jpg":
-        "Wide view of the tables with dining sets layed out",
-      "/images/galleries/dinnerontheriver/WS017.jpg":
-        "Michael Shoulders with society member",
-      "/images/galleries/dinnerontheriver/WS018.jpg":
-        "Books on entry way table",
-      "/images/galleries/dinnerontheriver/WS022.jpg":
-        "Society members gathered around a table",
-      "/images/galleries/dinnerontheriver/WS029.jpg": "Three society members",
-      "/images/galleries/dinnerontheriver/WS030.jpg": "Society member",
-      "/images/galleries/dinnerontheriver/WS033.jpg":
-        "Society members chatting",
-      "/images/galleries/dinnerontheriver/WS034.jpg":
-        "Society members chatting",
-      "/images/galleries/dinnerontheriver/WS035.jpg":
-        "Society members seated at their dining table",
-      "/images/galleries/dinnerontheriver/WS037.jpg":
-        "Society members chatting",
-      "/images/galleries/dinnerontheriver/WS040.jpg":
-        "Society members chatting",
-      "/images/galleries/dinnerontheriver/WS041.jpg":
-        "Violinist performing a musical number",
-      "/images/galleries/dinnerontheriver/WS042.jpg":
-        "Society members gathered after the program",
-      "/images/galleries/dinnerontheriver/WS044.jpg": "Society member",
-      "/images/galleries/dinnerontheriver/WS045.jpg": "Society members",
-      "/images/galleries/dinnerontheriver/WS048.jpg":
-        "Society members chatting",
-      "/images/galleries/dinnerontheriver/WS051.jpg":
-        "Wide view of all society members at their dining tables",
-      "/images/galleries/dinnerontheriver/WS053.jpg":
-        "Michael Shoulders seated with guest",
-      "/images/galleries/dinnerontheriver/WS055.jpg": "Society members",
-      "/images/galleries/dinnerontheriver/WS059.jpg": "Society members",
-      "/images/galleries/dinnerontheriver/WS060.jpg": "Society members",
-      "/images/galleries/dinnerontheriver/WS061.jpg": "Society members",
-      "/images/galleries/dinnerontheriver/WS062.jpg": "Society members",
-      "/images/galleries/dinnerontheriver/WS064.jpg": "Society members",
-      "/images/galleries/dinnerontheriver/WS068.jpg":
-        "Wide view of society speaker and members",
-      "/images/galleries/dinnerontheriver/WS070.jpg":
-        "Wide view of society speaker and members",
-      "/images/galleries/dinnerontheriver/WS083.jpg":
-        "Society speakers presenting awards",
-      "/images/galleries/dinnerontheriver/WS086.jpg":
-        "Society speakers drawing raffle ticket",
+      "/images/galleries/dinnerontheriver/WS013.jpg": "",
+      "/images/galleries/dinnerontheriver/WS015.jpg": "",
+      "/images/galleries/dinnerontheriver/WS016.jpg": "",
+      "/images/galleries/dinnerontheriver/WS022.jpg": "",
+      "/images/galleries/dinnerontheriver/WS029.jpg": "",
+      "/images/galleries/dinnerontheriver/WS030.jpg": "",
+      "/images/galleries/dinnerontheriver/WS017.jpg": "",
+      "/images/galleries/dinnerontheriver/WS018.jpg": "",
+      "/images/galleries/dinnerontheriver/WS033.jpg": "",
+      "/images/galleries/dinnerontheriver/WS040.jpg": "",
+      "/images/galleries/dinnerontheriver/WS034.jpg": "",
+      "/images/galleries/dinnerontheriver/WS042.jpg": "",
+      "/images/galleries/dinnerontheriver/WS044.jpg": "",
+      "/images/galleries/dinnerontheriver/WS086.jpg": "",
+      "/images/galleries/dinnerontheriver/WS035.jpg": "",
+      "/images/galleries/dinnerontheriver/WS037.jpg": "",
+
+      "/images/galleries/dinnerontheriver/WS041.jpg": "",
+
+      "/images/galleries/dinnerontheriver/WS045.jpg": "",
+      "/images/galleries/dinnerontheriver/WS048.jpg": "",
+      "/images/galleries/dinnerontheriver/WS051.jpg": "",
+      "/images/galleries/dinnerontheriver/WS053.jpg": "",
+      "/images/galleries/dinnerontheriver/WS055.jpg": "",
+      "/images/galleries/dinnerontheriver/WS059.jpg": "",
+      "/images/galleries/dinnerontheriver/WS060.jpg": "",
+      "/images/galleries/dinnerontheriver/WS061.jpg": "",
+      "/images/galleries/dinnerontheriver/WS062.jpg": "",
+      "/images/galleries/dinnerontheriver/WS064.jpg": "",
+      "/images/galleries/dinnerontheriver/WS068.jpg": "",
+      "/images/galleries/dinnerontheriver/WS070.jpg": "",
+      "/images/galleries/dinnerontheriver/WS083.jpg": "",
     },
   },
   gallery2: {
@@ -1166,10 +1148,10 @@ let galleryList = {
       "images/galleries/politicsofmemory/PoliticsofMemory2.jpg": "",
       "images/galleries/politicsofmemory/PoliticsofMemory6.jpg": "",
       "images/galleries/politicsofmemory/PoliticsofMemory7.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsOfMemory3.png": "",
-      "images/galleries/politicsofmemory/PoliticsofMemory4.png": "",
-      "images/galleries/politicsofmemory/PoliticsofMemory5.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsofMemory8.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory22.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory23.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory24.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory25.jpg": "",
       "images/galleries/politicsofmemory/PoliticsofMemory9.jpg": "",
       "images/galleries/politicsofmemory/PoliticsofMemory10.jpg": "",
       "images/galleries/politicsofmemory/PoliticsofMemory11.jpg": "",
@@ -1183,10 +1165,10 @@ let galleryList = {
       "images/galleries/politicsofmemory/PoliticsofMemory19.jpg": "",
       "images/galleries/politicsofmemory/PoliticsofMemory20.jpg": "",
       "images/galleries/politicsofmemory/PoliticsofMemory21.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsofMemory22.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsofMemory23.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsofMemory24.jpg": "",
-      "images/galleries/politicsofmemory/PoliticsofMemory25.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory5.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory8.jpg": "",
+      "images/galleries/politicsofmemory/PoliticsOfMemory3.png": "",
+      "images/galleries/politicsofmemory/PoliticsofMemory4.png": "",
     },
   },
   gallery3: {
@@ -1195,19 +1177,6 @@ let galleryList = {
     subtitle:
       "Featuring Dr. Joe Trahern, Professor Emeritus of English, University of Tennessee April 16, 2013",
     images: {
-      "/images/galleries/spring2013/spring2013_photo7.jpg":
-        "Society speaker at podium",
-
-      "/images/galleries/spring2013/spring2013_photo8.jpg":
-        "Society speaker at podium",
-      "/images/galleries/spring2013/spring2013_photo1.jpg":
-        "Society member at podium",
-      "/images/galleries/spring2013/spring2013_photo3.jpg":
-        "Society members talking",
-
-      "/images/galleries/spring2013/spring2013_photo5.jpg": "Society speaker",
-      "/images/galleries/spring2013/spring2013_photo6.jpg": "Society speakers",
-
       "/images/galleries/spring2013/spring2013_photo9.jpg":
         "Wide view of society members and attendees in their seats",
       "/images/galleries/spring2013/spring2013_photo10.jpg":
@@ -1226,6 +1195,16 @@ let galleryList = {
 
       "/images/galleries/spring2013/spring2013_photo4.jpg":
         "Society members hugging",
+      "/images/galleries/spring2013/spring2013_photo7.jpg":
+        "Society speaker at podium",
+      "/images/galleries/spring2013/spring2013_photo3.jpg":
+        "Society members talking",
+      "/images/galleries/spring2013/spring2013_photo8.jpg":
+        "Society speaker at podium",
+      "/images/galleries/spring2013/spring2013_photo6.jpg": "Society speakers",
+      "/images/galleries/spring2013/spring2013_photo1.jpg":
+        "Society member at podium",
+      "/images/galleries/spring2013/spring2013_photo5.jpg": "Society speaker",
     },
   },
   /* TEMPLATE - REUSE AND INCREMENT THE totalNumberOfGalleries variable. totalNumberOfGalleries should = this most recently added galleries id that replaces _ in gallery_
