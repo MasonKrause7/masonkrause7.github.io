@@ -45,7 +45,7 @@
         display: none; 
         position: absolute;
         z-index: 100;
-        top: 127%;
+        top: 30px;
         background-color: var(--white);
         border-radius: 5px;
         margin: 0px;
@@ -54,7 +54,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        transform: translate(-29%, 1%);
+        transform: translate();
         min-width:150px;
         width: 25vw;
         max-width: 200px;

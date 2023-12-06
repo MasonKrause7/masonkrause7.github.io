@@ -322,6 +322,9 @@ th, td {
 .board h2{
     font-family: gothamBold;
 }
+.board{
+    margin-bottom: 5px;
+}
 
 .board-of-directors {
     list-style: none;
@@ -337,6 +340,14 @@ th, td {
     font-size: 1.2rem;
     margin: 3px 0px 2px 0px;
 }
+
+.board-version th {
+    text-align: center;
+    color: var(--white);
+    background-color: var(--black);
+
+}
+
 /* END BOARD */
 /* Bylaws and Constitution Styling*/
 .articles-of-bylaws h3 {
@@ -579,10 +590,13 @@ th, td {
     }
 }
 #back-to-top-btn {
-    border: 1px solid blue;
     text-align: center;
     align-self: center;
 }
+
+
+
+
 
 
 
