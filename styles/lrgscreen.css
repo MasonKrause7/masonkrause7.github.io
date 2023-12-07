@@ -1,4 +1,4 @@
-@media (min-width: 949px){
+@media (min-width: 950px){
 
 
     .mobile-nav{
@@ -71,10 +71,8 @@
         padding-right: 2px;
     }
     
-    .board-version {
-        width: 50vw;
-    }
-    #board-archive-year-links, #archive-year-links-list {
+    
+    .board-version, #board-archive-year-links, #archive-year-links-list {
         width: 50vw;
     }
     

@@ -288,11 +288,13 @@ th, td {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
 #newsletters li {
-    padding: 0px 5px;
+    text-align: left;
+    padding: 0px 3px 3px 3px;
     width: 120px;
     flex-grow: 1;
 }
@@ -309,6 +311,13 @@ th, td {
     width: 100%;
     height: 100%;
 }
+#additional-about-list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px 0px 3px 5px;
+    
+}
+
 #additional-about-list li a:hover {
     color: black;
 }
@@ -404,11 +413,19 @@ th, td {
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 #archive-year-links-list li {
+    text-align: center;
     padding: 5px;
     width: 110px;
     flex-grow: 1;
+}
+@media(max-width:950px),(min-width: 550px){
+    .board-version {
+            width: 65vw;
+        }
 }
 
 /* END BOARD */
@@ -455,10 +472,11 @@ th, td {
     opacity: .7;
 }
 .amendment-notes {
-    max-width: 60%;
+    max-width: 95%;
     font-family: gothamBook;
     padding: 0px 0vw 0px 3vw;
     font-size: 12pt;
+    text-align: center;
 }
 #constitution > div:last-of-type{
     border-bottom: 2px dotted black;
