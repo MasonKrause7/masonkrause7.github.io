@@ -2,15 +2,18 @@
 This file serves as the database of events and galleries to allow dynamic rendering and updating.
 Two lists are exported from this file to script.js, they are: eventList and galleryList.
 Each of these lists has properties for each instance of event and gallery that have occured. 
-Each instance has its own properties. 
-There are templates at the end of each list that model the properties an instance can have. Some helpful notes : 
+Each instance has its own properties, such as title, date, images, etc.
+There are templates at the end of each list that model the properties an instance can have. 
   Simply copy and paste the template, uncomment, increment the _ to represent the instance id, increment the totalNumberOf variable for the list, add instance data.
-  If you do not wish to include a property from the template for your instance, leave it as an empty string,
-     Do Not delete the property altogether or it will not render properly.
+  If you do not wish to include a property from the template for your instance, leave it as an empty string or empty dictionary 
+     Do Not delete a property from the template altogether or it will not render properly, again, leave it as an empty string
+     Example: event1: title: "", images: {} <- this keeps the properties but with no value, as it should be
+     Removing the title: "" altogether, or any of the other properties from the template will cause an error when the event renders
 */
 
-/*The eventList has properties for each event that the society has had. Each of these has its own properties that are the event details. */
-/*To add an event, simply copy the template at the end of the eventList, increment the event_ to the proper ID, fill in the event data, 
+/*To add an event, simply copy the template at the end of the eventList, 
+increment the event_ to the proper ID, 
+fill in the event data, 
 and then increment the totalNumberOfEvents variable by 1 to match the event_ */
 /* The totalNumberOfEvents variable should be the equal to the last event_ number in the eventList. */
 /*If the new event does not have a certain property that is in the template, still include the property declaration but leave its fields blank. e.g event1: { details: {} }*/
@@ -132,7 +135,7 @@ let eventList = {
   },
 
   event7: {
-    title: '"A Celebration of Scholarship"',
+    title: "<i>A Celebration of Scholarship</i>",
     subtitle: "Creative and Scholarly Achievements at Austin Peay",
     season: "2011 Winter Program",
     date: "Thursday, February 17, 2011",
@@ -329,7 +332,7 @@ let eventList = {
   },
 
   event16: {
-    title: '"A Celebration of Scholarship"',
+    title: "<i>A Celebration of Scholarship</i>",
     subtitle:
       "Spotlighting the scholarly and creative accomplishments of Austin Peay's faculty, staff, and students",
     season: "2013 Winter Program",
@@ -510,7 +513,7 @@ let eventList = {
     },
   },
   event24: {
-    title: '"A Celebration of Scholarship"',
+    title: "<i>A Celebration of Scholarship</i>",
     subtitle:
       "Spotlighting the scholarly and creative accomplishments of Austin Peay's faculty, staff, and students.",
     season: "2015 Winter Program",
@@ -658,7 +661,7 @@ let eventList = {
     },
   },
   event30: {
-    title: '"A Celebration of Scholarship"',
+    title: "<i>A Celebration of Scholarship</i>",
     subtitle:
       "Spotlighting the scholarly and creative accomplishments of Austin Peay's faculty, staff, and students",
     season: "2017 Winter Program",
@@ -811,7 +814,7 @@ let eventList = {
     },
   },
   event36: {
-    title: '"A Celebration of Scholarship"',
+    title: "<i>A Celebration of Scholarship</i>",
     subtitle:
       "Spotlighting the scholarly and creative accomplishments of Austin Peay's faculty, staff, and students",
     season: "2019 Winter Program",
@@ -906,7 +909,7 @@ let eventList = {
   },
 
   event40: {
-    title: '"A Celebration of Scholarship"',
+    title: "<i>A Celebration of Scholarship</i>",
     subtitle:
       "Spotlighting the scholarly and creative accomplishments of Austin Peay's faculty, staff, and students",
     season: "2022 Winter Program",
@@ -1051,6 +1054,31 @@ let eventList = {
       "": "",
     },
   },
+
+  event46: {
+    title: "<i>A Celebration of Scholarship</i>", //for quotes or apostrophes in a string use the escape character forward slash before it i.e. 'Postmaster\'s Daughter'
+    subtitle:
+      "Spotlighting the scholarly and creative accomplishments of Austin Peay's faculty, staff, and students", //for italics use <i></i> i.e. "author of <i>The Grinch</i>."
+    season: "2024 Winter Program", //i.e. "2023 Fall Program"
+    date: "Thursday, February 8th, 2024", //i.e. "Tuesday, October 17, 2023"
+    times: {
+      //<time> i.e. "7:00 PM" : <description>(OPTIONAL) i.e. "Refreshments", "Program Commencement", "Social Hour"
+      "4:00 PM": "",
+    },
+    location: "Truck Center, 416 College St.",
+    details: {
+      //"<type of detail>(OPTIONAL-used for readability) i.e. RSVP deadline" : "<value to be displayed> i.e. Please RSVP by 1/1/2000 to ###-###-####"
+      Description:
+        "At the reception, faculty members will give presentations about their recent research and publications.",
+      Admission:
+        "The program is free of charge and open to all Woodward Library Society members and guests.",
+    },
+    primaryPhoto: "", //"<url>"
+    images: {
+      //"<src> i.e. /images/events/2023WinterProgram-PrimaryImage" : "<alt> i.e. Purple front cover of the book 'The Postmasters Daughter' by Sharon Mabry. "
+      "": "",
+    },
+  },
   /*
   //TEMPLATE - REUSE and INCREMENT the _, AND INCREMENT the totalNumberOfEvents variable located below.
   //Do Not remove any properties. If you do not have data to include for a property, leave it as an empty string
@@ -1076,7 +1104,7 @@ let eventList = {
   },*/
 };
 //totalNumberOfEvents should match the greatest event_ number in the eventList object.
-const totalNumberOfEvents = 45;
+const totalNumberOfEvents = 46;
 
 //numberOfEventsThatAreCurrent controls how many events will be shown in the "current" section of event list
 //the rest of the events will be shown in the past events list

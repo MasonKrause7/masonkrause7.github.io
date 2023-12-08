@@ -489,6 +489,9 @@ th, td {
     margin: 10px 0px;
     justify-content: space-around;
 }
+#event-seo {
+    display: none;
+}
 #events-list {
     margin: 0px;
     padding: 0px;
