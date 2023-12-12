@@ -424,7 +424,7 @@ th, td {
 }
 @media(max-width:950px),(min-width: 550px){
     .board-version {
-            width: 65vw;
+            width: 85vw;
         }
 }
 
