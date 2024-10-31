@@ -1,0 +1,132 @@
+:root{
+    --primary: #00BDE9;
+    --secondary-light: #05CFFF; 
+    --secondary-dark: #0082A0;
+    --tertiary-light: #25D3FC;
+    --tertiary-dark: #00667D;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Permanent Marker';
+}
+
+body {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    
+}
+h1, h2, h3, h4, h5, p, a, li{
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-light);
+    padding: 0px;
+    height: 111px;
+}
+.logo {
+    margin-left: 3%;
+    padding: 10px;
+}
+.logo:hover img {
+    border: 7px solid white;
+}
+
+.logo img {
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.nav-options {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: 95%;
+    align-items: center;
+}
+.nav-options li {
+    padding: 13px;
+}
+.nav-options li:hover{
+    background-color: white;
+    border-radius: 7px;
+    transition: background-color 0.35s ease;
+}
+.nav-options li:hover a{
+    color: black;
+    transition: color 0.35s ease;
+}
+.nav-options li a {
+    height: 100%;
+    width: 100%;
+    padding: 13px;
+    font-size: 1.2em;
+}
+
+.main-body{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/resources/hero-bg-equations.png");
+    background-position: center;
+    background-size:contain;
+}
+.main-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+}
+.hero-heading {
+    font-size: 4em;
+}
+
+.hero-subheading {
+    font-size: 1.5em;
+}
+#hero-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero-img {
+    margin-top: 20px;
+    border: 3px solid white;
+}
+#hero-img-bottom-row img {
+    border-left: 3px solid white;
+}
+#hero-img-and-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+footer {
+    margin: 50px 0px 0px 0px;
+    background-color: var(--secondary-light);
+}
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer ul li {
+    margin: 20px 5%;
+}
