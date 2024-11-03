@@ -73,6 +73,9 @@ nav{
     font-size: 1.2em;
 }
 
+.page-title {
+    font-size: 2.2em;
+}
 .main-body{
     margin-top: 20px;
     display: flex;
@@ -129,4 +132,75 @@ footer ul {
 }
 footer ul li {
     margin: 20px 5%;
+}
+.vertical-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.download-button {
+    display: inline-block;
+    
+    padding: 15px 30px;
+    /* Increased padding for larger size */
+    font-size: 1.2em;
+    /* Larger font size */
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 7px;
+    /* Slightly more rounded corners */
+    cursor: pointer;
+    margin: 18px 5px;
+    /* Add some space between buttons */
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
+    font-family: 'Permanent Marker';
+    /* Use the same font as your site */
+}
+
+.download-button:hover {
+    filter: brightness(1.2);
+    /* Brighten on hover */
+}
+
+#download-pdf {
+    background-color: var(--secondary-dark);
+    /* Use your secondary-dark color */
+}
+
+#download-docx {
+    background-color: var(--secondary-dark);
+    font-size: 1.1em;
+    /* Use your tertiary-dark color */
+}
+.horizontal-div {
+    display: flex;
+    align-items: center;
+}
+.vertical-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#resume{
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
+    align-items: left;
+    text-align: left;
+}
+#resume, h2, h3, h4, h5, p, li{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+#resume li {
+    margin-left: 18px;
+}
+#resume h3 {
+    margin-top: 15px;
+}
+#resume h4{
+    margin-top: 10px;
 }
