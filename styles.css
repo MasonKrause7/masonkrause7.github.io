@@ -12,7 +12,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: 'Permanent Marker';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
 }
 
 body {
@@ -24,6 +24,7 @@ body {
 h1, h2, h3, h4, h5, p, a, li{
     color: white;
 }
+
 a {
     text-decoration: none;
 }
@@ -75,6 +76,7 @@ nav{
 
 .page-title {
     font-size: 2.2em;
+    margin: 10px, 0px 15px 0px;
 }
 .main-body{
     margin-top: 20px;
@@ -94,10 +96,13 @@ nav{
 }
 .hero-heading {
     font-size: 4em;
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .hero-subheading {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 #hero-div {
     display: flex;
@@ -192,7 +197,7 @@ footer ul li {
     align-items: left;
     text-align: left;
 }
-#resume, h2, h3, h4, h5, p, li{
+#resume, #resume h2, #resume h3, #resume h4, #resume h5, #resume p, #resume li{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 } 
 #resume li {
@@ -203,4 +208,16 @@ footer ul li {
 }
 #resume h4{
     margin-top: 10px;
+}
+#about-me-outter-container{
+    justify-content: space-evenly;
+}
+
+#about-me-container{
+    width: 75%;
+    align-items: baseline;
+    margin-top: 25px;
+}
+#about-me-container h3{
+    margin: 15px 0px 10px 0px;
 }
