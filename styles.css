@@ -76,7 +76,7 @@ nav{
 
 .page-title {
     font-size: 2.2em;
-    margin: 10px, 0px 15px 0px;
+    margin: 10px 0px 20px 0px;
 }
 .main-body{
     margin-top: 20px;
@@ -221,3 +221,35 @@ footer ul li {
 #about-me-container h3{
     margin: 15px 0px 10px 0px;
 }
+#projects-container{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+.project{
+    margin: 25px 0px;
+    background-color: grey;
+    border-radius: 1px 15px 1px 15px;
+    padding: 15px;
+}
+.project-title{
+    text-align: center;
+    width: 50%;
+    background-color: #00667D;
+    padding: 7px;
+    margin-left: -18px;
+    margin-bottom: 15px;
+    margin-top: -18px;
+    border-radius: 5px;
+}
+.project-title a:hover {
+    text-decoration: underline;
+}
+.project-details{
+
+}
+.project-description-title{
+    margin-top:10px;
+}
+
+
